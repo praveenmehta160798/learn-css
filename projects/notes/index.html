@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Notes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .home a{
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            color: white;
+            width: 100px;
+            height: 50px;
+            font-size: 40px;
+            background-color: black;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 30%;
+            border: 2px solid white;
+        }
+.home a:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px red;
+    border-color: black;
+    color: black;
+}
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <a href="/index.html">Home</a>
+    </div>
+    <h1>CSS Notes</h1>
+    <hr>
+    <ol>
+        <li>
+            <h2>Implementation</h2>
+            <ol type="A">
+                <li>
+                    <h3>Inline</h3>
+                    <pre>&lt;div style="color:red; width:500px;"&gt;</pre>
+                </li>
+
+                <li>
+                    <h3>Internal</h3>
+                    <pre>
+&lt;style&gt;
+   div{
+    color: red;
+    width: 500px;
+   }                    
+&lt;style&gt;                        
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>External</h3>
+                    <pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+                    <h5>> In style.css file.</h5>
+                    <pre>
+div{
+    color: red;
+    width: 500px;
+}
+                    </pre>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Color and Background Color</h2>
+            <ol type="A">
+                <li>
+                    <h3>Color - It's used for text color.</h3>
+                    <pre>
+div{
+    color: red;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Backgroud-Color - It's used for element or tag background color.</h3>
+                    <pre>
+div{
+    backgroud-color: pink;
+}
+                    </pre>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Basic Selectors</h2>
+            <ol type="A">
+                <li>
+                    <h3>Universal Selector</h3>
+                    <pre>
+*{
+    color: red;
+    width: 500px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Tag Selector</h3>
+                    <pre>
+p{
+    color: red;
+    width: 500px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Class Selector</h3>
+                    <pre>
+.className{
+    color: red;
+    width: 500px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>ID Selector</h3>
+                    <pre>
+#idName{
+    color: red;
+    width: 500px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Other Selectors</h3>
+                    <ol type="a">
+                        <li>
+                            <h4>class1class2</h4>
+                            <pre>
+.class1.class2{
+    color: red;
+    width: 500px;
+}
+                            </pre>
+                        </li>
+
+                        <li>
+                            <h4>element1 element2</h4>
+                            <pre>
+#id .class{
+    color: red;
+    width: 500px;
+}
+
+.class1 .class2{
+    color: red;
+    width: 500px;
+}
+
+.class element{
+    color: red;
+    width: 500px;
+}
+                            </pre>
+                        </li>
+
+                        <li>
+                            <h4>element1,element2</h4>
+                        </li>
+
+                        <li>
+                            <h4>element1 element2</h4>
+                        </li>
+
+                        <li>
+                            <h4>element1>element2</h4>
+                        </li>
+
+                        <li>
+                            <h4>element1+element2</h4>
+                        </li>
+
+                        <li>
+                            <h4>element1~element2</h4>
+                        </li>
+
+                        <li>
+                            <h4>[attribute]</h4>
+                        </li>
+
+                        <li>
+                            <h4>[attribute=value]</h4>
+                        </li>
+
+                        <li>
+                            <h4>[attribute~=value]</h4>
+                        </li>
+
+                        <li>
+                            <h4>[attribute|=value]</h4>
+                        </li>
+
+                        <li>
+                            <h4>[attribute^=value]</h4>
+                        </li>
+
+                        <li>
+                            <h4>[attribute$=value]</h4>
+                        </li>
+
+                        <li>
+                            <h4>[attribute*=value]</h4>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Border</h2>
+            <ol type="A">
+                <li>
+                    <h3>Border-Width</h3>
+                    <pre>
+div{
+    border-width: 2px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Border-Style</h3>
+                    <pre>
+div{
+    border-style: value;
+}
+                    </pre>
+                    <h5>Values</h5>
+                    <ul>
+                        <li>dashed</li>
+                        <li>dotted</li>
+                        <li>double</li>
+                        <li>groove</li>
+                        <li>hidden</li>
+                        <li>inherit</li>
+                        <li>initial</li>
+                        <li>inset</li>
+                        <li>none</li>
+                        <li>outset</li>
+                        <li>ridge</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>Border-Color</h3>
+                    <pre>
+div{
+    border-color: red;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Shorthand</h3>
+                    <pre>
+div{
+                style
+                  ^
+            width |  color
+             ^    |    ^
+             |    |    |
+    border: 2px solid red;
+
+    border: solid 2px; --> default color = Black , default width = 3px
+              |    |
+              v    |
+            color  v
+                 width
+}
+                    </pre>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Outline</h2>
+            <ol type="A">
+                <li>
+                    <h3>Outline-Width</h3>
+                    <pre>
+div{
+    outline-width: 2px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Outline-Style</h3>
+                    <pre>
+div{
+    outline-style: value;
+}
+                    </pre>
+                    <h5>Values</h5>
+                    <ul>
+                        <li>dashed</li>
+                        <li>dotted</li>
+                        <li>double</li>
+                        <li>groove</li>
+                        <li>hidden</li>
+                        <li>inherit</li>
+                        <li>initial</li>
+                        <li>inset</li>
+                        <li>none</li>
+                        <li>outset</li>
+                        <li>ridge</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>outline-Color</h3>
+                    <pre>
+div{
+    outline-color: red;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Shorthand</h3>
+                    <pre>
+div{
+                 style
+                   ^
+             width |  color
+              ^    |    ^
+              |    |    |
+    outline: 2px solid red;
+
+    outline: solid 2px; --> default color = Black , default width = 3px
+               |    |
+               v    |
+             color  v
+                  width
+}
+                    </pre>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Padding</h2>
+            <ul>
+                <li>
+                    <h3>Padding-Top</h3>
+                    <pre>
+div{
+    padding-top: 50px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Padding-Right</h3>
+                    <pre>
+div{
+    padding-right: 50px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Padding-Bottom</h3>
+                    <pre>
+div{
+    padding-bottom: 50px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Padding-Left</h3>
+                    <pre>
+div{
+    padding-left: 50px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Shorthand</h3>
+                    <pre>
+div{
+    padding: 50px; --> for all sides
+
+--------------------------------------
+
+    padding: 20px 50px;
+              |    |
+              v    v
+             top  left
+              &     &
+          bottom  right
+
+--------------------------------------
+
+    padding: 20px 30px 50px;
+              |    |    |
+              v    |    v
+             top   |  bottom
+                   v
+             right & left
+
+--------------------------------------
+
+                 right      left
+                   ^         ^
+                   |         |
+    padding: 10px 20px 30px 40px;
+              |         |    
+              v         v
+             top      bottom
+}  
+                    </pre>
+                </li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Margin</h2>
+            <ul>
+                <li>
+                    <h3>Margin-Top</h3>
+                    <pre>
+div{
+    margin-top: 50px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Margin-Right</h3>
+                    <pre>
+div{
+    margin-right: 50px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Margin-Bottom</h3>
+                    <pre>
+div{
+    margin-bottom: 50px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Margin-Left</h3>
+                    <pre>
+div{
+    margin-left: 50px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Shorthand</h3>
+                    <pre>
+div{
+    margin: 50px; --> for all sides
+
+--------------------------------------
+
+    margin: 20px 50px;
+              |    |
+              v    v
+             top  left
+              &     &
+          bottom  right
+
+--------------------------------------
+
+    margin: 20px 30px 50px;
+              |    |    |
+              v    |    v
+             top   |  bottom
+                   v
+             right & left
+
+--------------------------------------
+
+                 right      left
+                   ^         ^
+                   |         |
+    margin: 10px 20px 30px 40px;
+              |         |    
+              v         v
+             top      bottom
+}  
+                    </pre>
+                </li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Height and Width</h2>
+            <pre>
+div{
+    width: 500px;
+    height: 500px;
+}
+            </pre>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Min-Height and Max-Height</h2>
+            <ul>
+                <li>
+                    <h3>Min-Height</h3>
+                    <pre>
+div{
+    min-height: 200px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Max-Height</h3>
+                    <pre>
+div{
+    max-height: 1200px;
+}
+                    </pre>
+                </li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Min-Width and Max-Width</h2>
+            <ul>
+                <li>
+                    <h3>Min-Width</h3>
+                    <pre>
+div{
+    min-width: 200px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Max-Width</h3>
+                    <pre>
+div{
+    max-width: 1200px;
+}
+                    </pre>
+                </li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Box-Sizing</h2>
+            <pre>
+div{
+    box-sizing: value;
+}
+            </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>border-box</li>
+                <li>content-box</li>
+                <li>inherit</li>
+                <li>initial</li>
+                <li>unset</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Overflow</h2>
+            <pre>
+div{
+    overflow: value;
+}
+            </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>auto</li>
+                <li>hidden</li>
+                <li>scroll</li>
+                <li>visible</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Border-Radius</h2>
+            <ol type="A">
+                <li>
+                    <h3>Border-Top-Left-Radius</h3>
+                    <pre>
+div{
+    border-top-left-radius: 50px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Border-Top-Right-Radius</h3>
+                    <pre>
+div{
+    border-top-right-radius: 50px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Border-Bottom-Right-Radius</h3>
+                    <pre>
+div{
+    border-bottom-right-radius: 50px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Border-Bottom-Left-Radius</h3>
+                    <pre>
+div{
+    border-bottom-left-radius: 50px;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Border-Radius</h3>
+                    <pre>
+div{
+    border-radius: 50px; --> for all corners
+}
+
+--------------------------------------
+
+div{
+
+              top left corner
+                    ^
+                    |
+    border-radius: 50px 30px;
+                          |
+                          v
+                 bottom right corner
+}
+
+--------------------------------------
+
+div{
+                     bottom right corner
+                              ^
+            top left corner   |
+                    ^         |
+                    |         |
+    border-radius: 50px 30px 20px 0px;
+                         |         |
+                         v         |
+                  top right corner |
+                                   v
+                          bottom left corner
+}
+                    </pre>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2 class="test">Box-Shadow</h2>
+            <pre>
+    div{
+
+                  x-axis    blur     color
+                     ^       ^         ^
+                     |       |         |
+        box-shadow: 5px 5px 10px 10px red inset;
+                         |        |         |
+                         v        v         v
+                      y-axis   spread     inset
+                        
+    }
+</pre>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Float</h2>
+            <pre>
+div{
+    float: value;
+}
+            </pre>
+            <h3>Values</h3>
+            <ol type="A">
+                <li>right</li>
+                <li>left</li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Clear</h2>
+            <pre>
+div{
+    clear: value;
+}
+            </pre>
+            <h3>Values</h3>
+            <ol type="A">
+                <li>right</li>
+                <li>left</li>
+                <li>both</li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Font Properties</h2>
+            <ol type="A">
+                <li>
+                    <h3>Font-Size</h3>
+                </li>
+                <pre>
+div{
+    font-size: 30px;
+}
+                </pre>
+
+                <li>
+                    <h3>Font-Family</h3>
+                </li>
+                <pre>
+div{
+    font-family: Arial, Helvtica, sans-serif;
+}
+                </pre>
+
+                <li>
+                    <h3>Font-Weight</h3>
+                </li>
+                <pre>
+div{
+    font-weight: value;
+}
+                </pre>
+                <h4>Values</h4>
+                <ul>
+                    <li>100 to 900</li>
+                    <li>bold</li>
+                    <li>bolder</li>
+                    <li>lighter</li>
+                </ul>
+
+                <li>
+                    <h3>Font-Style</h3>
+                    <pre>
+div{
+    font-style: value;
+}
+                    </pre>
+                    <h4>Values</h4>
+                    <ol type="A">
+                        <li>italic</li>
+                        <li>normal</li>
+                        <li>oblique</li>
+                        <li>inherit</li>
+                        <li>initial</li>
+                        <li>unset</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Font-Variant</h3>
+                    <pre>
+div{
+    font-variant: value;
+}
+                    </pre>
+                    <h4>Values</h4>
+                    <ol type="A">
+                        <li>small-caps</li>
+                        <li>normal</li>
+                        <li>inherit</li>
+                        <li>initial</li>
+                        <li>unset</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Line-Height</h3>
+                    <pre>
+div{
+    line-height: 10px;
+}
+                    </pre>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Text Formatting Properties</h2>
+            <ol type="A">
+                <li>
+                    <h3>Text-Align</h3>
+                </li>
+                <pre>
+div{
+    text-align: value;
+}
+                </pre>
+
+
+                <li>Text-Align-Last</li>
+                <li>Text-Transform</li>
+                <li>Text-Indent</li>
+                <li>Word-Spacing</li>
+                <li>Letter-Spacing</li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Text-Decoration</h2>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Word-Wrap and Word-Break</h2>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Text-Shadow</h2>
+            <hr>
+        </li>
+
+        <li>
+            <h2>White-Space</h2>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Text-Overflow</h2>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Writing-Mode</h2>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Column-Count</h2>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Font Face Rule</h2>
+            <pre>
+
+@font-face{
+    font-family: myFirstFont;
+    src: url(file_location_with_fileName);
+}
+
+.heading{
+    font-family: myFirstFont;
+}
+            </pre>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Google Fonts</h2>
+            <pre>
+&lt;head&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"&gt;
+
+    &lt;style&gt;
+        h1{
+            font-family: 'Open-Sans', sans-serif;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+            </pre>
+        </li>
+
+        <li>
+            <h2>List Style</h2>
+            <ol type="A">
+                <li>
+                    <h3>List-Style-Image</h3>
+                    <pre>
+ul,ol{
+    list-style-image: url(/icon_location); --iconfinder.com for free icon
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>List-Style-Position</h3>
+                    <pre>
+ul,ol{
+    list-style-position: values;
+}
+                    </pre>
+                    <h4>Values</h4>
+                    <ul>
+                        <li>outside - default</li>
+                        <li>inside</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>List-Style-Type</h3>
+                    <pre>
+ul{
+    list-style-type: values1;
+}
+ol{
+    list-style-type: values2;
+}
+                    </pre>
+                    <h4>Values1</h4>
+                    <ul>
+                        <li>circle</li>
+                        <li>square</li>
+                        <li>disc - default</li>
+                        <li>none</li>
+                    </ul>
+                    <h4>Values2</h4>
+                    <ul>
+                        <li>upper-alpha</li>
+                        <li>lower-alpha</li>
+                        <li>upper-roman</li>
+                        <li>lower-roman</li>
+                        <li>decimal - default</li>
+                        <li>none</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Shorthand - List-Style</h3>
+                    <pre>
+ul,ol{
+                    position
+                        ^
+               type     |       image
+                 ^      |         ^
+                 |      |         |
+    list-style: none inside url(location);
+}
+                    </pre>
+                </li>
+            </ol>
+        </li>
+
+        <li>
+            <h2>Backgroud</h2>
+            <ol type="A">
+                <li>
+                    <h3>Background-Image</h3>
+                    <pre>
+body{
+    background-image: url(image_location);
+
+    for two or more images separate with comma ',' 
+    background-image: url(image_location), url(image_location);
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Background-Repeat</h3>
+                    <pre>
+body{
+    backgroud-repeat: values;
+                        
+    for two or more images separate with comma ',' 
+    backgroud-repeat: values, values;
+}
+                    </pre>
+                    <h4>Values</h4>
+                    <ul>
+                        <li>repeat - default</li>
+                        <li>no-repeat</li>
+                        <li>repeat-x</li>
+                        <li>repeat-y</li>
+                        <li>space</li>
+                        <li>round</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>Background-Position</h3>
+                    <pre>
+body{
+    backgroud-position: values;
+                        
+    for two or more images separate with comma ',' 
+    backgroud-position: values, values;
+}
+                    </pre>
+                    <h4>Values</h4>
+                    <ul>
+                        <li>left top</li>
+                        <li>left center</li>
+                        <li>left bottom</li>
+                        <li>right top</li>
+                        <li>right center</li>
+                        <li>right bottom</li>
+                        <li>center top</li>
+                        <li>center center</li>
+                        <li>center bottom</li>
+                        <li>x% y%</li>
+                        <li>xpx ypx</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>Background Shorthand</h3>
+                    <pre>
+body{
+    background color         image repeat      
+                 ^             ^
+                 |             |
+    background: pink url() no-repeat right center;
+                       |               |     |
+                       v                -----
+                 image location           |
+                                          v
+                                   image position
+}
+                    </pre>
+                </li>
+            </ol>
+            <hr>
+
+        <li>
+            <h2>Background-Attachment</h2>
+            <pre>
+body{
+    background-attachement: Values;
+}
+                </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>scroll - default</li>
+                <li>fixed</li>
+            </ul>
+        </li>
+        <hr>
+        </li>
+
+        <li>
+            <h2>Background-Size</h2>
+            <pre>
+#box{
+    background-image: url(image);
+    backgroud-repeat: no-repeat;
+    background-size: values;
+}
+            </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>150px - for both axis</li>
+                <li>150px 200px - for x-axis, y-axis</li>
+                <li>cover - cover full box with respect of width</li>
+                <li>contain - adjust height and width according with box</li>
+                <li>auto - default or actual image</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Background-Origin</h2>
+            <pre>
+#box{
+    background-image: url(image);
+    backgroud-repeat: no-repeat;
+    background-size: 200px;
+    background-origin: vaules;
+}
+            </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>padding-box - default</li>
+                <li>content-box</li>
+                <li>border-box</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Background-Clip</h2>
+            <pre>
+#box{
+    background-image: url(image);
+    backgroud-repeat: no-repeat;
+    background-size: 200px;
+    background-clip: vaules;
+}
+
+h1{
+    color: transparent;
+    background-clip: text;
+}
+            </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>padding-box - default</li>
+                <li>content-box</li>
+                <li>border-box</li>
+                <li>text</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Color Modes</h2>
+            <ol type="A">
+                <li>Color Name
+                    <ul>
+                        <li>red</li>
+                        <li>green</li>
+                        <li>blue</li>
+                        <li>orange</li>
+                        <li>yellow</li>
+                        <li>pink</li>
+                        <li>magenta</li>
+                        <li>brown</li>
+                    </ul>
+                </li>
+                <li>Hexadecimal</li>
+                <ul>
+                    <li>#ff0000 - red</li>
+                    <li>#0000ff - blue</li>
+                    <li>#00ff00 - green</li>
+                </ul>
+                <li>RGB(red green blue) - values between 0 to 255</li>
+                <ul>
+                    <li>rgb(255,0,0) - red</li>
+                    <li>rgb(0,250,0) - green</li>
+                    <li>rgb(0,0,250) - blue</li>
+                </ul>
+
+                <li>RGBA(red green blue alpha) - alpha values between 0 to 1 for tranparancy</li>
+                <ul>
+                    <li>rgb(255,0,0,0.5) - red</li>
+                    <li>rgb(0,250,0,0.1) - green</li>
+                    <li>rgb(0,0,250,0.5) - blue</li>
+                </ul>
+                <li>HSL(hue saturation lightness) - hue values between 0 to 255, saturation and lightness value between 0 to 100%</li>
+                <ul>
+                    <li>hsl(0,0%,0%)</li>
+                    <li>hsl(120,0%,50%)</li>
+                    <li>hsl(240,25%,0%)</li>
+                </ul>
+                <li>HSLA(hue saturation lightness alpha)</li>
+                <ul>
+                    <li>hsl(0,0%,0%,0.5)</li>
+                    <li>hsl(120,0%,50%,0.1)</li>
+                    <li>hsl(240,25%,0%,0.9)</li>
+                </ul>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Gradients</h2>
+        </li>
+    </ol>
+</body>
+
+</html>

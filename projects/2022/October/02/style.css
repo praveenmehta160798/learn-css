@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #e3e6e3;
+}
+.container-width{
+    width: 980px;
+    margin: auto;
+    background-color: white;
+}
+.container-width a{
+    color: white;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+/* ----------------------- Head 1 ----------------------- */
+#head1{
+    height: 48px;
+    background-color: #009270;
+    margin-top: 10px;
+    padding: 0px 15px;
+}
+#head1 > img{
+    width: 101px;
+    height: 40px;
+    float: left;
+    margin-top: 4px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.nav-items{
+    float: left;
+    height: 100%;
+    width: 80px;
+    padding: 16px 0px 0px 6px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav-items:hover{
+    background-color: #008062;
+}
+.nav-items > a{
+    color: white;
+}
+
+#plus{
+    float: right;
+    margin-top: 10px;
+    background-color: white;
+    padding: 5px 14px;
+    border-radius: 18px;
+    color: #666666;
+    cursor: pointer;
+}
+
+/* ----------------------- Head 2 ----------------------- */
+#head2{
+    height: 38px;
+    background-color: #4a4a4a;
+    font-size: 12px;
+}
+
+.nav-items2{
+    float: left;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+}
+.nav-items2:hover{
+    background-color: #444444;
+}
+.active{
+    background-color: #252525;
+}
+
+/* ----------------------- Featured Matches ----------------------- */
+#featured-match{
+    background-color: white;
+    margin-top: 5px;
+    height: 135px;
+}
+
+#featured-match > h2{
+    font-size: 16px;
+    color: #009270;
+    padding: 15px 20px;
+}
+
+
+/* ----------------------- Main ----------------------- */
+#main{
+    margin-top: 5px;
+}
+
+/* ----------------------- Content Left ----------------------- */
+#content-left{
+    width: 166px;
+    background-color: white;
+}
+/* ----------------------- Content Center ----------------------- */
+#content-center{
+    width: 480px;
+    height: 4826px;
+    background-color: white;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    
+}
+/* ----------------------- Content Right ----------------------- */
+#content-right{
+    background-color: white;
+    margin-left: 5px;
+    width: 323px;
+}
+/* ----------------------- Footer ----------------------- */
+#footer{
+    width: 100%;
+    height: 275px;
+    background-color: #4a4a4a;
+    clear: both;
+}

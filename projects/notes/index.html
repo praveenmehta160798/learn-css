@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .home a{
+        .home a {
             position: fixed;
             right: 0px;
             top: 0px;
@@ -24,12 +24,13 @@
             border-radius: 30%;
             border: 2px solid white;
         }
-.home a:hover{
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 5px red;
-    border-color: black;
-    color: black;
-}
+
+        .home a:hover {
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px 2px 5px red;
+            border-color: black;
+            color: black;
+        }
     </style>
 </head>
 
@@ -1168,7 +1169,8 @@ h1{
                     <li>rgb(0,250,0,0.1) - green</li>
                     <li>rgb(0,0,250,0.5) - blue</li>
                 </ul>
-                <li>HSL(hue saturation lightness) - hue values between 0 to 255, saturation and lightness value between 0 to 100%</li>
+                <li>HSL(hue saturation lightness) - hue values between 0 to 255, saturation and lightness value between
+                    0 to 100%</li>
                 <ul>
                     <li>hsl(0,0%,0%)</li>
                     <li>hsl(120,0%,50%)</li>
@@ -1185,7 +1187,292 @@ h1{
         </li>
 
         <li>
-            <h2>Gradients</h2>
+            <h2>Background - Gradients (we can use color in rgba/hsla for transparent colors)</h2>
+            <ol>
+                <li>
+                    <h3>Linear Gradient</h3>
+                    <ol type="A">
+                        <li>
+                            <h4>Top to Bottom - default</h4>
+                            <pre>
+#box{
+    background: linear-gradient(to bottom, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Left to Right</h4>
+                            <pre>
+#box{
+    background: linear-gradient(to right, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Right to Left</h4>
+                            <pre>
+#box{
+    background: linear-gradient(to left, red, yellow);
+}                                
+                            </pre>
+
+                        </li>
+                        <li>
+                            <h4>Top to Bottom</h4>
+                            <pre>
+#box{
+    background: linear-gradient(to top, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Top Left to Bottom Right</h4>
+                            <pre>
+#box{
+    background: linear-gradient(to bottom right, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Top Right to Bottom Left</h4>
+                            <pre>
+#box{
+    background: linear-gradient(to bottom left, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Bottom Left to Top Right</h4>
+                            <pre>
+#box{
+    background: linear-gradient(to top right, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Bottom Right to Top Left</h4>
+                            <pre>
+#box{
+    background: linear-gradient(to top left, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>In Degrees - xdeg</h4>
+                            <pre>
+#box{
+    background: linear-gradient(45deg, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3 style="color: red;">Repeating Linear Gradient - not understand</h3>
+                    <ol type="A">
+                        <li>
+                            <h4>Top to Bottom - default</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(to bottom, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Left to Right</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(to right, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Right to Left</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(to left, red, yellow);
+}                                
+                            </pre>
+
+                        </li>
+                        <li>
+                            <h4>Top to Bottom</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(to top, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Top Left to Bottom Right</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(to bottom right, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Top Right to Bottom Left</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(to bottom left, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Bottom Left to Top Right</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(to top right, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>Bottom Right to Top Left</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(to top left, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>In Degrees - xdeg</h4>
+                            <pre>
+#box{
+    background: repeating-linear-gradient(45deg, red, yellow);
+}                                
+                            </pre>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Radial Gradient</h3>
+                    <ol type="A">
+                        <li>Center - default</li>
+                        <li>Right Bottom</li>
+                        <li>Left Bottom</li>
+                        <li>Left Top</li>
+                    </ol>
+                </li>
+                <li>Repeating Radial Gradient</li>
+            </ol>
+        </li>
+
+        <li>
+            <h2>Opacity - value between 0 to 1</h2>
+            <pre>
+#box{
+    opacity: 0.5;
+        or
+    filter: alpha(opacity=50);
+
+    both are same
+}
+            </pre>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Background-Blend-Mode</h2>
+            <pre>
+#box{
+    bakcground-blend-mode : values;
+}                
+            </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>normal - default</li>
+                <li>multiply</li>
+                <li>screen</li>
+                <li>overlay</li>
+                <li>darken</li>
+                <li>lighten</li>
+                <li>color-dodge</li>
+                <li>color-burn</li>
+                <li>hard-light</li>
+                <li>soft-light</li>
+                <li>difference</li>
+                <li>exclusion</li>
+                <li>hue</li>
+                <li>color</li>
+                <li>saturation</li>
+                <li>luminosity</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Background-Mix-Blend-Mode</h2>
+            <pre>
+#box{
+    bakcground-blend-mode : values;
+}                
+                            </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>normal - default</li>
+                <li>multiply</li>
+                <li>screen</li>
+                <li>overlay</li>
+                <li>darken</li>
+                <li>lighten</li>
+                <li>color-dodge</li>
+                <li>color-burn</li>
+                <li>hard-light</li>
+                <li>soft-light</li>
+                <li>difference</li>
+                <li>exclusion</li>
+                <li>hue</li>
+                <li>color</li>
+                <li>saturation</li>
+                <li>luminosity</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Display</h2>
+            <h3>Values</h3>
+            <ul>
+                <h4>Common</h4>
+                <li>none</li>
+                <li>inline</li>
+                <li>block</li>
+                <li>inline-block</li>
+                <li>list-item</li>
+                
+                <h3>Grid and Flex - not done</h3>
+                <li>flex</li>
+                <li>inline-grid</li>
+                <li>grid</li>
+                <li>inline-line</li>
+                
+                <h4>Table - not done</h4>
+                <li>table</li>
+                <li>inline-table</li>
+                <li>table-row</li>
+                <li>table-cell</li>
+                <li>table-column</li>
+                <li>table-caption</li>
+                <li>table-column-group</li>
+                <li>table-row-group</li>
+                <li>table-header-group</li>
+                <li>table-footer-group</li>
+
+                <h4>Others - not done</h4>
+                <li>run-in</li>
+                <li>contents</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Visibility</h2>
+            <ul>
+                <li>visible - default</li>
+                <li>hidden</li>
+                <li>collapse - same as display: none;</li>
+            </ul>
         </li>
     </ol>
 </body>

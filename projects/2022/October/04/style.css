@@ -1,0 +1,129 @@
+/* 
+Background Color : rgb(239,240,244)
+Text and Button Color : rgb(8,17,87)
+Text Color on Button : rgb(239,240,244)
+Name Color : rgb(143,164,160)
+*/
+/* ------------------------------- COMMON ------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8,17,87);
+    font-size: 20px;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(239,240,244);
+}
+.btn{
+    background-color: rgb(8,17,87);
+    color: rgb(239,240,244);
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.default-cursor{
+    cursor: default;
+}
+/* ------------------------------- HEADER ------------------------------- */
+#header{
+    height: 120px;
+}
+h1{
+    margin: 30px 100px;
+    font-size: 30px;
+    float: left;
+}
+#nav-bar{
+    float: right;
+    padding: 20px;
+}
+a{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.nav-item:hover{
+    text-decoration: underline;
+}
+a img{
+    width: 16px;
+    color: rgb(8,17,87);
+}
+.btn img{
+    filter: invert(100%);
+    margin-right: 15px;
+}
+.btn:hover{
+    background-color: rgba(38, 47, 117, 0.95)
+}
+#shop-cart{
+    margin-bottom: -5px;
+    width: 25px;
+    height: 25px;
+}
+#shop-cart:hover{
+    filter: invert(40%);
+}
+/* ------------------------------- LEFT and RIGHT COMMON ------------------------------- */
+.content{
+    width: 48%;
+    height: 80vh;
+    margin: 20px;
+}
+/* ------------------------------- LEFT ------------------------------- */
+#left{
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+}
+#left h2{
+    font-size: 70px;
+    color: rgb(8,17,87);
+    text-shadow: 1px 1px 0px rgba(8, 17, 87, 0.181);
+    font-family: cursive;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 20px;
+    font-variant: small-caps;
+}
+#left img{
+    display: block;
+    width: 800px;
+    margin: auto;
+    margin-left: -50px;
+    border-radius: 20px;
+}
+
+/* ------------------------------- RIGHT ------------------------------- */
+#right{
+    float: right;
+    margin-left: 10px;
+}
+#right p{
+    color: rgb(8,17,87);
+}
+#line-one{
+    margin-top: 125px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#line-two{
+    margin-top: 20px;
+    font-size: 90px;
+    font-weight: 500;
+}
+#line-three{
+    margin-top: 20px;
+    font-size: 25px;
+    width: 75%;
+    word-spacing: 5px;
+    line-height: 35px;
+}
+#right .btn{
+    margin: 0px;
+    margin-top: 30px;
+}

@@ -6,7 +6,7 @@
     font-size: 30px;
 }
 .my-button{
-    opacity: 0.4;
+    opacity: 0.2;
     background-color: red;
     color: white;
     display: inline-block;
@@ -118,7 +118,7 @@ body{
     box-shadow: 3px 3px 0px white, -3px -3px 0px black;
 }
 .my-project-description{
-    color: darkblue;
+    color: white;
     margin-top: 10px;
     margin-bottom: 5px;
     padding: 0px 30px;

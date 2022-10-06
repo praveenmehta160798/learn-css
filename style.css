@@ -1,55 +1,128 @@
+/* ----- BUTTONS FOR ALL PAGES START ----- */
+#my-buttons{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+}
+.my-button{
+    opacity: 0.4;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    padding: 15px 20px 10px 20px;
+    box-shadow: 3px 3px 3px black, -3px -3px 3px white;
+    border-radius: 10px;
+}
+.my-button > img{
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+.my-button:hover{
+    box-shadow: inset 3px 3px 3px black, inset -3px -3px 3px white;
+    opacity: 1;
+}
+/* ----- BUTTONS FOR ALL PAGES END ----- */
+
+:root{
+    --bg-color: ;
+
+}
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     border: none;
+    box-sizing: border-box;
 }
-
 body{
-    background-color: antiquewhite;
+    background-color: lightblue;
 }
+#my-container{
+    /* background-color: antiquewhite; */
 
-.home a{
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    color: white;
-    width: 100px;
-    height: 50px;
-    font-size: 40px;
-    background-color: black;
-    text-decoration: none;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+#my-head{
+    /* background-color: aquamarine; */
+    font-size: 4rem;
+    padding: 30px 10px;
     text-align: center;
-    border-radius: 30%;
-    border: 2px solid white;
 }
-.back a{
-    right: 110px !important;
+#my-head > h1{
+    border-bottom: 10px solid rgb(135, 194, 214);
+    color: lightblue;
+    text-shadow: 2px 2px 5px black, -2px -2px 5px white;
+    box-shadow: 0px 2px 2px 0px black;
+    padding-bottom: 5px;
+    border-radius: 20px;
 }
-.home a:hover{
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 5px red;
-    border-color: black;
-    color: black;
-}
+#my-content{
+    /* background-color: blue; */
 
-.container{
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    place-content: left;
+    grid-auto-rows: min-content;
+}
+.my-month{
+    margin-top: 10px;
+    background-color: lightpink;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 3rem;
+}
+.my-month > h2, .my-year{
+    color: lightpink;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px white;
+
+}
+.my-year{
+    /* background-color: chartreuse; */
+    padding: 0px 30px;
+    font-size: 2.5rem;
+    border-bottom: 5px solid rgba(240, 128, 128, 0.7);
+}
+.my-project-list{
+    /* background-color: beige; */
+    display: grid;
+    grid-template-rows: min-content;
+    padding: 0px 20px;
+}
+.my-project{
+    background-color: lightseagreen;
+    padding: 0px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.my-project-name{
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 200px;
-}
-
-.container > a{
     display: block;
-    color: rgb(0, 0, 0);
-    background-color: rgb(186, 186, 186);
-    /* padding: 50px; */
-    font-size: 100px;
-    border-radius: 30px;
+    width: 200px;
+    font-size: 2rem;
+    padding: 10px 10px;
+    color: white;
+    background-color: blue;
+    box-shadow: 3px 3px 0px black, -3px -3px 0px white;
 }
-
-.container > a:hover{
-    box-shadow: 2px 2px 5px 10px black, -2px -2px 5px 10px black;
-    background-color: rgb(198, 198, 198);
-    color: rgb(74, 74, 74);
+.my-project-name:hover{
+    color: darkblue;
+    background-color: white;
+    box-shadow: 3px 3px 0px white, -3px -3px 0px black;
+}
+.my-project-description{
+    color: darkblue;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0px 30px;
+    font-size: 1.5rem;
+    /* background-color: violet; */
+    border-bottom: 5px solid rgb(18, 109, 104);
 }

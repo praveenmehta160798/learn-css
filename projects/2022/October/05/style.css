@@ -14,7 +14,7 @@ body{
 }
 @font-face {
     font-family: "Raleway";
-    src: url(/projects/2022/October/05/font/Raleway-VariableFont_wght.ttf);
+    src: url(font/Raleway-VariableFont_wght.ttf);
 }
 /* --------------------------- HEADER --------------------------- */
 #header{
@@ -104,12 +104,10 @@ body{
 /* --------------------------- CONTENT - 3 --------------------------- */
 #content-3{
     margin-top: 100px;
-    /* background-color: #d583fb; */
     text-align: center;
     color: rgb(128,128,128);
 }
 #content-3 h4{
-    /* font-size: 30px; */
     text-transform: uppercase;
 }
 #content-3 h2{
@@ -125,7 +123,7 @@ body{
     margin-top: 20px;
 }
 .wrapper-2 .item{
-
+    
     width: 400px;
     height: 350px;
     float: left;
@@ -135,22 +133,22 @@ body{
     border-radius: 5px;
     columns: #555555;
 }
-.img{
+#content-3 .img{
     display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     box-shadow: 2px 2px 2px rgb(128,128,128) inset;
 }
-.img:hover{
+#content-3 .img:hover{
     box-shadow: 2px 2px 2px rgb(128,128,128);
 }
-.img img{
+#content-3 .img img{
     margin-top: 10px;
     width: 30px;
     height: 30px;
 }
-.item p{
+.wrapper-2 .item p{
     height: 100%;
     text-align: justify;
 }
@@ -162,4 +160,152 @@ body{
     margin-top: 30px;
     font-size: 16px;
     line-height: 25px;
+}
+
+/* --------------------------- CONTENT - 4 --------------------------- */
+#content-4{
+    width: 100%;
+    background-color: rgb(240,232,238);
+    clear: both;
+    margin-top: 850px;
+}
+#content-4 .special{
+    display: block;
+}
+#content-4 h4{
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 100px;
+}
+#content-4 h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.wrapper-3{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-left: 310px;
+}
+#content-4 .img{
+    width: 380px;
+    height: 600px;
+    margin: 0px 8px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#content-4 .img img{
+    width: 380px;
+    height: 470px;
+    margin: auto;
+    display: inline-block;
+}
+/* #content-4 img:hover{
+    zoom: 1.1;
+    display: inline-block;
+} */
+.img h5{
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* --------------------------- CONTENT - 5 --------------------------- */
+#content-5{
+    width: 100%;
+    padding: 60px;
+}
+.wrapper-4{
+    width: 1300px;
+    margin: auto;
+    text-align: center;
+}
+#content-5 h4{
+    text-transform: uppercase;
+    display: inline-block;
+}
+#content-5 h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.wrapper-4 .item{
+    width: 30%;
+    margin: 0px 10px;
+    padding: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(128,128,128), -2px -2px 2px white;
+}
+.wrapper-4 .item img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.item h6{
+    margin-top: 20px;
+}
+form{
+    margin-top: 50px;
+}
+form input{
+    width: 550px;
+    height: 45px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eff0f4;
+    box-shadow: 2px 2px 2px rgb(128,128,128), -2px -2px 2px white;
+    margin-top: 10px;
+    margin-right: -70px;
+}
+.group{
+    width: 50%;
+    display: inline-block;
+}
+.msg{
+    float: right;
+    margin-right: 90px;
+    height: 190px;
+}
+form .email{
+    display: inline-block;
+}
+input:hover{
+    box-shadow: 2px 2px 2px rgb(128,128,128) inset, -2px -2px 2px white inset;
+    /* background-color: #fb839e; */
+}
+.submit{
+    width: 160px;
+    margin-left: 150px;
+    margin-top: 30px;
+    display: block;
+}
+
+/* --------------------------- FOOTER --------------------------- */
+#footer{
+    text-align: center;
+    background-color: rgb(240,232,238);
+}
+.wrapper-5{
+    width: 1300px;
+    background-color: lightblue;
+    margin: auto;
+
+}
+.wrapper-5 .special{
+    text-transform: uppercase;
+}
+.wrapper-5 .item{
+    background-color: aqua;
+    margin: 0px 10px;
+    height: 360px;
 }

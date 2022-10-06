@@ -1,0 +1,54 @@
+:root{
+    --bg-color-1: rgb(239,240,244);
+    --bg-color-2: rgb(240,232,238);
+    --special-color: rgb(251,131,158);
+    --shadow-color-1: rgb(209,209,209);
+    --shadow-color-2: rgb(247,247,247);
+    --favicon-color: rgb(0,0,0);
+    --text-color-1: rgb(85,85,85);
+    --text-color-2: rgb(128,128,128);
+}
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+i{
+    font-size: 20px;
+    color: pink;
+}
+#container{
+    display: grid;
+    /* grid-template-rows: 80px 60px 900px 150px 900px 800px 650px 400px; */
+}
+.sub-container{
+    border: 1px solid black;
+}
+#header{
+    background-color: var(--bg-color-1);
+    padding: 10px 30px;
+}
+#header > a > img{
+    height: 80px;
+}
+#nav{
+    background-color: var(--bg-color-1);
+}
+#section-1{
+    background-color: var(--bg-color-1);
+}
+#section-2{
+    background-color: var(--bg-color-2);
+}
+#section-3{
+    background-color: var(--bg-color-1);
+}
+#section-4{
+    background-color: var(--bg-color-2);
+}
+#section-5{
+    background-color: var(--bg-color-1);
+}
+#footer{
+    background-color: var(--bg-color-2);
+}

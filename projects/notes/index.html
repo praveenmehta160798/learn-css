@@ -1440,13 +1440,13 @@ h1{
                 <li>block</li>
                 <li>inline-block</li>
                 <li>list-item</li>
-                
+
                 <h3>Grid and Flex - not done</h3>
                 <li>flex</li>
                 <li>inline-grid</li>
                 <li>grid</li>
                 <li>inline-line</li>
-                
+
                 <h4>Table - not done</h4>
                 <li>table</li>
                 <li>inline-table</li>
@@ -1474,6 +1474,996 @@ h1{
                 <li>collapse - same as display: none;</li>
             </ul>
         </li>
+
+        <li>
+            <h2>HTML Basic Layout Design</h2>
+            <ul type="A">
+                <li>header</li>
+                <li>nav</li>
+                <li>section</li>
+                <li>aside</li>
+                <li>footer</li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>Position</h2>
+            <pre>
+#box{
+    position: values;
+}                
+            </pre>
+            <h3>Values</h3>
+            <ul>
+                <li>static</li>
+                <li>relative</li>
+                <li>absolute</li>
+                <li>fixed</li>
+                <li>sticky</li>
+            </ul>
+            <h3>Helper Property</h3>
+            <ul>
+                <li>left - left right you can use can one</li>
+                <li>right</li>
+                <li>top - top bottom you can use one</li>
+                <li>bottom</li>
+            </ul>
+        </li>
+
+        <li>
+
+            <h2>Z-index - its values can an integer and its default value is auto</h2>
+            <pre>
+#box1{
+    z-index: 1;
+}
+#box2{
+    z-index: -1;
+}
+            </pre>
+        </li>
+
+        <li>
+            <h2>Media Queries</h2>
+            <pre>
+Basic Width of any screen
+Desktop
+    1920px
+    1440px
+    1366px
+    1024px
+Tab
+    700px - 900px
+Mobile
+    320px - 480px
+
+@media value1 logic-operator (value2) {
+    body{
+        backgroud-color: red;
+        color: white;
+    }
+}
+            </pre>
+            <h3>Value1</h3>
+            <ul>
+                <li>All - all inclues</li>
+                <li>Print - decide how look when web page is printed</li>
+                <li>Screen - different CSS for different screen sizes</li>
+                <li>Speech - its used for blind who can't see the website</li>
+            </ul>
+            <h3>Logical-Operator</h3>
+            <ul>
+                <li>And</li>
+                <li>Not</li>
+                <li>Only</li>
+            </ul>
+            <h3>Value2</h3>
+            <ul>
+                <h4>Commonly Used</h4>
+                <li>min-width</li>
+                <li>max-width</li>
+            </ul>
+            <ul>
+                <h4>Others</h4>
+                <li>width</li>
+                <li>height</li>
+                <li>any-hover</li>
+                <li>any-pointer</li>
+                <li>pointer</li>
+                <li>aspect-ratio</li>
+                <li>color</li>
+                <li>color-gamut</li>
+                <li>color-index</li>
+                <li>max-aspect-ratio</li>
+                <li>min-aspect-ratio</li>
+                <li>max-color</li>
+                <li>min-color</li>
+                <li>max-color-index</li>
+                <li>min-color-index</li>
+                <li>max-height</li>
+                <li>min-height</li>
+                <li>monochrome</li>
+                <li>max-monochrome</li>
+                <li>min-monochrome</li>
+                <li>max-resolution</li>
+                <li>min-resolution</li>
+                <li>overflow-block</li>
+                <li>overflow-inline</li>
+                <li>grid</li>
+                <li>hover</li>
+                <li>inverted-colors</li>
+                <li>light-level</li>
+                <li>orientation</li>
+                <li>resolution</li>
+                <li>scan</li>
+                <li>scripting</li>
+                <li>update</li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>Table Properties - we can use simple "padding" as a cell-padding HTML property</h2>
+            <ol>
+                <li>
+                    <h3>Border-Spacing</h3>
+                    <pre>
+table{
+                  both
+                    ^
+                    | 
+    border-spacing: 10px;
+}
+
+table{ 
+                   rows columns
+                     ^    ^
+                     |    |
+    border-spacing: 10px 20px;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>Border-Collapse</h3>
+                    <pre>
+table{
+    border-collapse: value;
+}
+                    </pre>
+                    <h4>Value</h4>
+                    <ul>
+                        <li>separate - default</li>
+                        <li>collapse - double border to single border</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Verticle-Align</h3>
+                    <pre>
+td, th{
+    verticle-align: value;
+}
+                    </pre>
+                    <h4>Value</h4>
+                    <ul>
+                        <li>middle - default</li>
+                        <li>top</li>
+                        <li>bottom</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Caption-Side</h3>
+                    <pre>
+caption{
+    caption-side: value;
+}
+                    </pre>
+                    <h4>Value</h4>
+                    <ul>
+                        <li>top - default</li>
+                        <li>bottom</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Empty-Cells - working show only when border-collapse: separate</h3>
+                    <pre>
+table{
+    empty-cells: value;
+}
+                    </pre>
+                    <h4>Value</h4>
+                    <ul>
+                        <li>show - default</li>
+                        <li>hide</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Table-Layout</h3>
+                    <pre>
+
+                    </pre>
+                    <h4>Value</h4>
+                    <ul>
+                        <li>auto - default - width can be changed when data is extended</li>
+                        <li>fixed - height can be changed when data is extended</li>
+                    </ul>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Resize</h2>
+            <pre>
+#box{
+    overflow: auto;
+    resize: value;
+}
+            </pre>
+            <h3>Value</h3>
+        <li>horizontal</li>
+        <li>vertical</li>
+        <li>both</li>
+        <li>none - default</li>
+        <hr>
+        </li>
+
+        <li>
+            <h2>Cursor</h2>
+            <pre>
+#box{
+    cursor: value;
+}
+            </pre>
+            <h3>Value</h3>
+            <ul>
+                <li>auto</li>
+                <li>default</li>
+                <li>none</li>
+                <li>context-menu</li>
+                <li>help</li>
+                <li>pointer</li>
+                <li>progress</li>
+                <li>wait</li>
+                <li>cell</li>
+                <li>crosshair</li>
+                <li>text</li>
+                <li>vertical-text</li>
+                <li>alias</li>
+                <li>copy</li>
+                <li>move</li>
+                <li>no-drop</li>
+                <li>not-allowed</li>
+                <li>e-resize</li>
+                <li>n-resize</li>
+                <li>ne-resize</li>
+                <li>s-resize</li>
+                <li>se-resize</li>
+                <li>sw-resize</li>
+                <li>w-resize</li>
+                <li>ew-resize</li>
+                <li>ns-resize</li>
+                <li>nesw-resize</li>
+                <li>nwse-resize</li>
+                <li>col-resize</li>
+                <li>row-resize</li>
+                <li>all-scroll</li>
+                <li>zoom-in</li>
+                <li>zoom-out</li>
+                <li>grab</li>
+                <li>grabbing</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Mesurement Units</h2>
+            <ol>
+                <li>
+                    <h3>px(Pixel)</h3>
+
+                </li>
+                <li>
+                    <h3>%(Percentage) - it dependent on their parent</h3>
+                </li>
+                <li>
+                    <h3>em - maximum used for font size - it dependent on their parent</h3>
+                </li>
+                <li>
+                    <h3>rem - maximum used for font size - takes size from browser/html root</h3>
+                </li>
+                <li>
+                    <h3>vw(Viewport-Width) - it dependent on their viewport-width</h3>
+                </li>
+                <li>
+                    <h3>vh(Viewport-Height) - it dependent on their viewport-height</h3>
+                </li>
+                <li>
+                    <h3>vmax(Viewport Maximum) - which viewport(width, height) has max which size take</h3>
+                </li>
+                <li>
+                    <h3>vmin(Viewport-Minimum) - which viewport(width, height) has min which size take</h3>
+                </li>
+                <li>
+                    <h3>Others</h3>
+                    <ol>
+                        <li>
+                            <h4>Absolute Units - fixed sizes</h4>
+                            <ul>
+                                <li>cm - Centimeters</li>
+                                <li>mm - Millimeters</li>
+                                <li>in - Inches</li>
+                                <li>px - Pixels</li>
+                                <li>pt - Points</li>
+                                <li>pc - Picas</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Relative Units - dependent on their parent</h4>
+                            <ul>
+                                <li>em</li>
+                                <li>rem - Relative em</li>
+                                <li>ch</li>
+                                <li>ex</li>
+                                <li>vw - Viewport Width</li>
+                                <li>vh - Viewport Height</li>
+                                <li>vmax - Viewport Maximum</li>
+                                <li>vmin - Viewport Minimum</li>
+                                <li>% - Percentage</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Variable - var() function</h2>
+            <pre>
+for globally use
+:root{
+    --main-color: red;
+}
+#body{
+    color: var(--main-color);
+}
+p{
+    backgroud-color: var(--main-color);
+}
+#box{
+    color: var(--main-color);
+    opacity: 70%;
+}
+
+for locally use
+.classA{
+    --main-color: blue;
+    color: var(--main-color);
+}
+            </pre>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Calculation - cal() function - +,-, *, / these operator can be used for calculation</h2>
+            <pre>
+.classA{
+    width: calc(100% - 1em);
+}
+
+.classB{
+    width: calc(100% / 2);
+}
+
+.classC{
+    background-image: url(logo.png);
+    background-position: calc(100% - 50px) calc(100% - 20px);
+}
+
+.classD{
+    background-color: hsl(180, calc(2*25%), 65%)
+}
+            </pre>
+            <hr>
+        </li>
+
+        <!-- ------------------------------------------------------- Grid System ------------------------------------------------------- -->
+        <li>
+            <h2>Grid</h2>
+            <pre>
+Implementation
+.parent-div{
+    display: grid;
+}
+            </pre>
+            <ol>
+                <li>
+                    <h3>grid-templete-columns</h3>
+                    <pre>
+.parent-div{
+    display: grid;
+    grid-templete-columns: 250px 200px 240px;
+}
+.parent-div{
+    display: grid;
+    grid-templete-columns: 250px 200px auto;
+}
+.parent-div{
+    display: grid;
+    grid-templete-columns: 1fr 100px 1fr; --> fr = fraction(fraction work when parent div has a width or height)
+}
+.parent-div{
+    display: grid;
+    grid-templete-columns: repeat(2, 200px);
+                                  |    |
+                                  v    v
+                              column  size
+}
+.parent-div{
+    display: grid;
+    grid-templete-columns: repeat(2, 200px) 1fr 20%;
+}
+                    </pre>
+                </li>
+                <li>
+                    <h3>grid-templete-rows</h3>
+                    <pre>
+.parent-div{
+    display: grid;
+    grid-templete-rows: 250px 200px 240px;
+}
+.parent-div{
+    display: grid;
+    grid-templete-rows: 250px 200px auto;
+}
+.parent-div{
+    display: grid;
+    grid-templete-rows: 1fr 100px 1fr; --> fr = fraction(fraction work when parent div has a width or height)
+}
+.parent-div{
+    display: grid;
+    grid-templete-rows: repeat(2, 200px);
+                                  |    |
+                                  v    v
+                              column  size
+}
+.parent-div{
+    display: grid;
+    grid-templete-rows: repeat(2, 200px) 1fr 20%;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Grid-Gap</h3>
+                    <ul>
+                        <li>
+                            <h4>grid-row-gap</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+        
+                 row-gap
+                    ^
+                    |
+    grid-row-gap: 10px;
+}
+                            </pre>
+
+                        </li>
+                        <li>
+                            <h4>grid-column-gap</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+
+    grid-column-gap: 20px;
+                    |
+                    v
+                column-gap
+
+}
+                            </pre>
+
+                        </li>
+                        <li>
+                            <h4>grid-gap - shorthand</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+                
+                both
+                ^
+                |
+    grid-gap: 10px;
+    grid-gap: 10px 20px;
+                |   |
+                v   v
+            rows-gap  columns-gap
+}
+                            </pre>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>Grid Item Positioning</h3>
+                    <ol>
+                        <li>
+                            <h4>grid-row-start</h4>
+                            <pre>
+.grid-item{
+    grid-row-start: 2;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-row-end</h4>
+                            <pre>
+.grid-item{
+    grid-row-end: 3;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-row - shorthand</h4>
+                            <pre>
+.grid-item{
+          row-start
+              ^
+              |
+    grid-row: 2 / 3;
+                  |
+                  v
+               row-end
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-column-start</h4>
+                            <pre>
+.grid-item{
+    grid-column-start: 2;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-column-end</h4>
+                            <pre>
+.grid-item{
+    grid-column-end: 3;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-column - shorthand</h4>
+                            <pre>
+.grid-item{
+         column-start
+              ^
+              |
+    grid-row: 2 / 3;
+                  |
+                  v
+             column-end
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-area - shorthand</h4>
+                            <pre>
+.grid-item{
+              row-end   column-end
+                   ^       ^
+                   |       |
+    grid-area: 2 / 3 / 2 / 3;
+               |       |
+               v       v
+         row-start   column-start
+}
+                            </pre>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>Spanning Grid Items</h3>
+                    <ol>
+                        <li>
+                            <h4>grid-row-start</h4>
+                            <pre>
+.grid-item{
+    grid-row-start: 2;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-row-end</h4>
+                            <pre>
+.grid-item{
+    grid-row-end: 4;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-row - shorthand</h4>
+                            <pre>
+.grid-item{
+          row-start
+              ^
+              |
+    grid-row: 2 / 4;
+                  |
+                  v
+               row-end
+}
+
+or
+
+.grid-items{
+    grid-row: span 2;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-column-start</h4>
+                            <pre>
+.grid-item{
+    grid-column-start: 2;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-column-end</h4>
+                            <pre>
+.grid-item{
+    grid-column-end: 4;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-column - shorthand</h4>
+                            <pre>
+.grid-item{
+         column-start
+              ^
+              |
+    grid-row: 2 / 4;
+                  |
+                  v
+             column-end
+}
+
+or
+
+.grid-items{
+    grid-column: span 2;
+}
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>grid-area - shorthand</h4>
+                            <pre>
+.grid-item{
+              row-end   column-end
+                   ^       ^
+                   |       |
+    grid-area: 2 / 4 / 2 / 4;
+               |       |
+               v       v
+         row-start   column-start
+}
+
+or
+
+.grid-items{
+    grid-area: span 2, span 2;
+}
+                            </pre>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>Grid line naming</h3>
+                    <pre>
+.parent-div{
+    display: grid;
+    grid-template-rows: [head-start] 120px [head-end nav-start] 60px [nav-end content-start] 400px [content-end footer-start] 100px [footer-end]
+    grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+}
+.grid-item-1{
+    grid-row: head-start / head-end;
+    grid-column: col-start 1 / col-end 3;
+}
+.grid-item-2{
+    grid-row: nav-start / nav-end;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Naming grid Areas</h3>
+                    <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 120px 60px 100px 400px 50px;
+
+    grid-template-areas: "header  header  header"
+                         "menu    menu    menu"
+                         "box1    box2    sidebar"
+                         "content content sidebar"
+                         "footer  footer  footer";
+                         /* use . for blank column.*/
+}
+
+.header{
+    grid-area: header;
+}
+.menu{
+    grid-area: menu;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.content{
+    grid-area: content;
+}
+.footer{
+    grid-area: footer;
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>MinMax() function</h3>
+                    <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: min-content 60px 100px 400px min-content;
+}
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: max-content 60px 100px 400px max-content;
+}
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: minmax(150px, 300px) 60px 100px 400px minmax(150px, min-content);
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Grid Implicit & Explicit</h3>
+                    <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); --
+    grid-template-rows: repeat(2, 120px);  --|
+                                             | 
+                                             v
+                                these two are implicit grid
+    /* which grid are not mentioned in the grid-template those grid-item are explicit grid*/
+
+    grid-auto-rows: 80px;
+    grid-auto-flow: column; --> row is default
+    grid-auto-columns: 0.5fr;
+
+    we can give "dense" after column in grid-auto-flow - if there is any grid space left then "dense" will fill that space from next any grid item which can fit.
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Aligning Grid Items</h3>
+                    <ol>
+                        <li>
+                            <h4>align-items / align-self - used for vertical alignment</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 120px);
+
+    align-items: values;
+}
+
+.grid-item{
+    align-self: values;
+}
+                            </pre>
+                            <h5>Values</h5>
+                            <ul>
+                                <li>start</li>
+                                <li>end</li>
+                                <li>center</li>
+                                <li>stretch - default</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>justify-items / justify-self - used for horizontal alignment</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 120px);
+
+    justify-items: values;
+}
+
+.grid-item{
+    justify-self: values;
+}
+                            </pre>
+                            <h5>Values</h5>
+                            <ul>
+                                <li>start</li>
+                                <li>end</li>
+                                <li>center</li>
+                                <li>stretch - default</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>place-items / place-self - used for both vertical and horizontal alignment</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 120px);
+
+    place-items: align-items justify-self;
+}
+
+.grid-item{
+    place-self: align-self justify-self;
+}
+                            </pre>
+                            <h5>Values</h5>
+                            <ul>
+                                <li>start</li>
+                                <li>end</li>
+                                <li>center</li>
+                                <li>stretch - default</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>Aligning Tracks</h3>
+                    <ol>
+                        <li>
+                            <h4>justify-content - used for horizontal alignment</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 120px);
+
+    justify-content: values;
+}
+                            </pre>
+                            <h3>Value</h3>
+                            <ul>
+                                <li>start</li>
+                                <li>end</li>
+                                <li>center</li>
+                                <li>stretch</li>
+                                <li>space-around</li>
+                                <li>space-between</li>
+                                <li>space-evenly</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>align-content - used for vertical alignment</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 120px);
+
+    align-content: values;
+}
+                            </pre>
+                            <h3>Value</h3>
+                            <ul>
+                                <li>start</li>
+                                <li>end</li>
+                                <li>center</li>
+                                <li>stretch</li>
+                                <li>space-around</li>
+                                <li>space-between</li>
+                                <li>space-evenly</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>place-content - used for vertical alignment</h4>
+                            <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 120px);
+
+    align-content: values;
+}
+                            </pre>
+                            <h3>Value</h3>
+                            <ul>
+                                <li>start</li>
+                                <li>end</li>
+                                <li>center</li>
+                                <li>stretch</li>
+                                <li>space-around</li>
+                                <li>space-between</li>
+                                <li>space-evenly</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>Auto-Fill and Auto-Fit</h3>
+                    <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, 120px);
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Fit-Content</h3>
+                    <pre>
+.parent-div{
+    display: grid;
+    grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+    grid-template-rows: repeat(2, minmax(100px, min-content));
+}
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Order</h3>
+                    <pre>
+.grid-item-1{
+    order: 1;
+}
+.grid-item-2{
+    order: 4;
+}
+/* which has most order value that grid-item will go last */
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>Grid Nesting</h3>
+                </li>
+
+                <li>
+                    <h3>Overlapping Grid Items - give same grid-row or grid-coloumn and then align grid items self</h3>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <hr>
+    </li>
     </ol>
 </body>
 

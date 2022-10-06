@@ -4,6 +4,7 @@
     right: 20px;
     top: 20px;
     font-size: 30px;
+    z-index: 1;
 }
 .my-button{
     opacity: 0.2;

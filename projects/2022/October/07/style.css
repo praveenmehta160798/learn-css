@@ -1,6 +1,6 @@
 :root{
-    --text-color-1: #323232;
-    --text-color-2: #4d4d4d;
+    --text-color-1: #232323;
+    --text-color-2: #5e5e5e;
     --bg-color-1: #ffffff;
     --bg-color-2: #f2edeb;
     --hover-color: #4d4d4d;
@@ -85,11 +85,14 @@ body{
 #content-1 h3{
     justify-self: center;
     grid-column: 1 / 3;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color-2);
+    font-weight: normal;
 }
 .box1 > img{
     width: 600px;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 div.box1:nth-child(even){
     justify-self: right;

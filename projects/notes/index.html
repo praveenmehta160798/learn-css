@@ -8,17 +8,18 @@
     <title>CSS Notes</title>
 
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- BUTTONS CSS -->
-    <link rel="stylesheet" href="../../../../style.css">
+    <!-- <link rel="stylesheet" href="../../style.css"> -->
     <!-- BUTTONS CSS -->
 
 </head>
+
 <body>
-    
+
     <!-- BUTTONS FOR ALL PAGES - START-->
     <div id="my-buttons">
-        <a href="" class="my-home-button my-button">
+        <a href="../../index.html" class="my-home-button my-button">
             <img src="https://praveenmehta160798.github.io/learn-css/home-icon.png" alt="home-icon">
         </a>
         <!-- <a href="" class="my-back-button my-button">
@@ -26,7 +27,7 @@
         </a> -->
     </div>
     <!-- BUTTONS FOR ALL PAGES - END -->
-    
+
     <h1>CSS Notes</h1>
     <hr>
     <ol>
@@ -2449,10 +2450,274 @@ or
                     <h3>Overlapping Grid Items - give same grid-row or grid-coloumn and then align grid items self</h3>
                 </li>
             </ol>
+            <hr>
         </li>
+
+        <li>
+            <h2>Clip Path</h2>
+            <pre>
+it's also work on div
+img{
+                horizontal-radius     y-axis
+                        ^             ^
+                        |             |  
+    clip-path: circle(40% 10% at 50% 50%);
+                            |      |
+                            v      v
+                vertical-radius  x-axis
+}
+img{
+                    radius     y-axis
+                       ^          ^
+                       |          |  
+    clip-path: ellipse(40% at 50% 50%);
+                              |
+                              v
+                            x-axis
+}
+img{
+             horizontal-radius     y-axis
+                       ^             ^
+                       |             |  
+    clip-path: inset(40% 10% at 50% 50%);
+                           |      |
+                           v      v
+                vertical-radius  x-axis
+}
+img{
+                      top     left
+                       ^       ^
+                       |       |  
+    clip-path: polygon(40% 10% 50% 50%);
+                           |      |
+                           v      v
+                         right  bottom
+}
+            </pre>
+            <h3>Value</h3>
+            <ul>
+                <li>circle</li>
+                <li>ellipse</li>
+                <li>inset</li>
+                <li>polygon</li>
+            </ul>
+        </li>
+        <hr>
+
+        <li>
+            <h2>Shape-Outside</h2>
+            <pre>
+img{
+    clip-path: circle(40% 10% at 50% 50%);
+
+        horizontal-radius     y-axis
+                    ^             ^
+                    |             |  
+    shape-path: circle(40% 10% at 50% 50%);
+                        |      |
+                        v      v
+            vertical-radius  x-axis
+
+    shape-margin: 20px;
+}
+            </pre>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Transition</h2>
+            <pre>
+#box{
+    width: 150px;
+    height: 150px;
+    transition-property: width, height, background; --> 'all' for all property
+    transition-duration: 2s, 2s, 2s; --> '2s' for all duration
+    transition-timing-function: value;
+    transition-delay: 2s;
+
+
+                   timing-function
+             property    ^
+                 ^       |
+                 |       |
+    transition: all 2s value 2s; --> shorthand
+                    |        |
+                    v        v
+                duration   delay 
+}
+#box:hover{
+    width: 300px;
+    height: 300px;
+    background: orange;
+}
+            </pre>
+            <ul>
+                <h3>Value</h3>
+                <li>ease</li>
+                <li>linear</li>
+                <li>ease-in</li>
+                <li>ease-out</li>
+                <li>ease-in-out</li>
+                <li>step-start</li>
+                <li>step-end</li>
+                <li>steps(4, end)</li>
+                <li>cubic-bezier</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Transform - 2D</h2>
+            <pre>
+#box{
+    width: 250px;
+    height: 150px;
+    background-color: tomato;
+    margin: 150px 150px;
+
+    transform: value;
+
+    transform: value value value; --> it can be used for multiple transform
+
+    transform-origin: left top; --> origin values can in pixel, %, left top, default vaule = center center; 
+}
+            </pre>
+            <ul>
+                <h3>Value</h3>
+                <li>rotate(angle)</li>
+                <li>translate(x,y) - move box from itself points</li>
+                <li>translateX(x)</li>
+                <li>translateY(y)</li>
+                <li>scale(x,y)</li>
+                <li>scaleX(x)</li>
+                <li>scaleY(y)</li>
+                <li>skew(x-angle, y-angle)</li>
+                <li>skewX(x-angle)</li>
+                <li>skewY(y-angle)</li>
+                <li>matrix(scaleX(), skewY(), skewx(), scaleY(), translate(), translatey())</li>
+                <li>none - default</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Transform - 3D</h2>
+            <pre>
+#box{
+    width: 250px;
+    height: 150px;
+    background-color: tomato;
+    margin: 150px 150px;
+
+    transform: value;
+}
+            </pre>
+            <ul>
+                <h3>Value</h3>
+                <li>roateX(angle)</li>
+                <li>rotateY(angle)</li>
+                <li>rotateZ(angle)</li>
+                <li>rotate3d(x,y,z,angle)</li>
+                <li>translateZ(z)</li>
+                <li>translate3d(x,y,z)</li>
+                <li>scale3d(x,y,z)</li>
+                <li>scaleZ(z)</li>
+                <li>perspective(n)</li>
+                <li>matrix3d(n,n,...)</li>
+                <li>none - default</li>
+            </ul>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Perspective</h2>
+            <pre>
+.base{
+    width: 350px;
+    height: 250px;
+    background: gray;
+    font-size: 18px;
+    text-align: center;
+    margin: 100px 0 0 100px;
+
+    perspective: 800px;
+    perspective-origin: top left; --> top, left, etc. center center default value
+}
+#box{
+    width: 350px;
+    height: 250px;
+    background: tomato;
+
+    transform: rotateX(60deg);
+}
+            </pre>
+            <hr>
+        </li>
+
+        <li>
+            <h2>Transform-Style</h2>
+            <pre>
+.card{
+    width: 300px;
+    height: 300px;
+    /* background: red; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: -150px -100px;
+
+    font-size: 50px;
+    text-align: center;
+
+    perspective: 500px;
+
+}
+.card:hover .content{
+    transform: rotateY(180deg);
+}
+.content{
+    width: 100%;
+    height: 100%;
+    /* background: blue; */
+    
+    position: absolute;
+
+    transition: transform 1s;
+    transform-style: preserve-3d; --> for make base a 3d object
+}
+.front, .back{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: blue;
+    border-radius: 30px;
+
+    position: absolute;
+    backface-visibility: hidden;
+
+    line-height: 300px;
+}
+.back{ 
+    background-color: blue;
+    color: white;
+
+    transform: rotateY(180deg);
+}
+            </pre>
+            <ul>
+                <h3>Value</h3>
+                <li>flat - default</li>
+                <li>preserve-3d</li>
+            </ul>
+            <hr>
+        </li>
+        <!-- here -->
     </ol>
-    <hr>
     </li>
+
     </ol>
 </body>
 

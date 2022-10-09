@@ -53,6 +53,7 @@ section:nth-child(odd){
 }
 .btn:hover{
     background-color: var(--btn-hover-color);
+    cursor: pointer;
 }
 .small-head{
     font-size: var(--font-size-5);

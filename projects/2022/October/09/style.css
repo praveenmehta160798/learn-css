@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&display=swap');
 
-:root{
+:root {
     --bg-color-1: #f5fbff;
     --bg-color-2: #FFFFFF;
     --bg-color-3: #101126;
     --btn-hover-color: #303260;
-    --font-size-1: 80px; 
-    --font-size-2: 48px; 
-    --font-size-3: 40px; 
-    --font-size-4: 32px; 
-    --font-size-5: 16px; 
-    --font-size-6: 14px;
+    --font-size-1: 5rem;
+    --font-size-2: 3rem;
+    --font-size-3: 2.5rem;
+    --font-size-4: 2rem;
+    --font-size-5: 1rem;
+    --font-size-6: 0.875rem;
     --font-1: 'Fira Sans', sans-serif;
     --font-2: 'Montserrat', sans-serif;
     --text-color-1: #101126;
     --text-color-2: #FFFFFF;
 }
 
-*{
+* {
     font-family: var(--font-1);
     margin: 0px;
     padding: 0px;
@@ -28,21 +28,25 @@
 /* -------------------------------------------------- HOME-START -------------------------------------------------- */
 
 /* ----------------- MAIN-AND-COMMON-START ----------------- */
-section:nth-child(even){
+section:nth-child(even) {
     background-color: var(--bg-color-1);
 }
-section:nth-child(odd){
+
+section:nth-child(odd) {
     background-color: var(--bg-color-2);
 }
-.container{
+
+.container {
     /* background-color: aqua; */
     margin: auto;
-    width: 1224px;
+    width: 63.75%;
 }
-.sub-head{
+
+.sub-head {
     font-size: var(--font-size-3);
 }
-.btn{
+
+.btn {
     padding: 14px 32px;
     color: var(--text-color-2);
     background-color: var(--bg-color-3);
@@ -51,48 +55,57 @@ section:nth-child(odd){
     font-size: var(--font-size-6);
     margin: auto;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--btn-hover-color);
     cursor: pointer;
 }
-.small-head{
+
+.small-head {
     font-size: var(--font-size-5);
     text-transform: uppercase;
 }
-.para{
+
+.para {
     font-family: var(--font-2);
     line-height: 25px;
 }
+
 /* ----------------- MAIN-AND-COMMON-END ----------------- */
 
 
 
 
 /* ----------------- HEADER-START ----------------- */
-#header{
+#header {
     /* min-height: 1300px; */
     width: 100%;
     background-color: var(--bg-color-1);
     /* border: 1px solid red; */
 }
-.nav{
+
+.nav {
     padding: 24px 16px;
     text-align: center;
 
 }
-.nav a{
+
+.nav a {
     margin-left: 65px;
     display: inline-block;
     text-align: center;
     color: var(--text-color-1);
     font-family: var(--font-2);
     font-size: var(--font-size-6);
-    border-bottom: 1px solid var(--bg-color-1);   
+    border-bottom: 1px solid var(--bg-color-1);
 }
-.nav a:hover , a.active{
-    border-bottom: 1px solid var(--text-color-1);   
+
+.nav a:hover,
+a.active {
+    border-bottom: 1px solid var(--text-color-1);
 }
-#profile{
+
+#profile {
     /* background-color: aquamarine; */
     text-align: center;
     margin-top: 80px;
@@ -103,130 +116,155 @@ section:nth-child(odd){
     grid-auto-flow: row;
     align-content: space-around;
 }
-.small-head-1{
+
+.small-head-1 {
     margin-bottom: -20px;
 
 }
-.name-1{
+
+.name-1 {
     font-size: var(--font-size-1);
     font-weight: 700;
 }
-#profile img{
+
+#profile img {
     width: 600px;
     height: 624px;
     margin: auto;
 }
-.btn-1{
+
+.btn-1 {
     margin-bottom: 80px;
 }
+
 /* ----------------- HEADER-END ----------------- */
 
 
 
 
 /* ----------------- SECTION-1-START ----------------- */
-#section-1{
-    min-height: 976px;
+#section-1 {
+    height: min-content;
     width: 100%;
 }
-#section-1 .container{
+
+#section-1 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:    "main-box           box-1"
-                            "main-box           box-2"
-                            ".                  box-3";
-    gap: 100px;
+    grid-template-areas: "main-box           box-1"
+        "main-box           box-2"
+        ".                  box-3";
+    /* gap: 100px; */
     padding: 160px 0px;
 }
-.main-box{
+
+.main-box {
     grid-area: main-box;
     /* padding-right: 105px; */
-    width: 85%;
+    /* width: 85%; */
 }
-.box1{
-    width: 50%;
+
+.box1 {
+    /* width: 50%; */
     /* padding-right: 230px; */
     margin-left: 50px;
 }
-.box1 .para{
+
+.box1 .para {
     margin-top: 10px;
 }
-.box1-1{
+
+.box1-1 {
     grid-area: box-1;
 }
-.box1-2{
+
+.box1-2 {
     grid-area: box-2;
 }
-.box1-3{
+
+.box1-3 {
     grid-area: box-3;
 }
+
 /* ----------------- SECTION-1-END ----------------- */
 
 
 
 
 /* ----------------- SECTION-2-START ----------------- */
-#section-2{
-    min-height: 528px;
+#section-2 {
+    height: min-content;
     width: 100%;
 }
-#section-2 .container{
+
+#section-2 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:    "small-head             small-head"
-                            "sub-head               sub-head"
-                            "box2-1                  box2-2";
+    grid-template-areas: "small-head             small-head"
+        "sub-head               sub-head"
+        "box2-1                  box2-2";
 }
-#section-2 .container .small-head{
+
+#section-2 .container .small-head {
     grid-area: small-head;
     margin-top: 150px;
 }
-#section-2 .container .sub-head{
+
+#section-2 .container .sub-head {
     grid-area: sub-head;
     font-size: var(--font-size-2);
     margin-top: 20px;
 }
-#section-2 .container .box2-1{
+
+#section-2 .container .box2-1 {
     grid-area: box2-1;
     width: 80%;
     margin-top: -50px;
 }
-#section-2 .container .box2-2{
+
+#section-2 .container .box2-2 {
     width: 80%;
     margin-top: -50px;
     grid-area: box2-2;
-    margin-left: 80px;
 }
-.writer{
+
+#section-2 .writer{
+    margin-bottom: 20px;
+    /* background-color: red; */
     margin-top: 25px;
+    width: 80%;
 }
+
 /* ----------------- SECTION-2-END ----------------- */
 
 
 
 
 /* ----------------- SECTION-3-START ----------------- */
-#section-3{
-    min-height: 464px;
+#section-3 {
+    min-height: min-content;
     background-color: var(--bg-color-3);
     width: 100%;
     text-align: center;
 
 
 }
-#section-3 .container{
+
+#section-3 .container {
     display: grid;
     justify-content: center;
     color: var(--text-color-2);
     padding: 100px;
 }
-#section-3 .container .sub-head{
+
+#section-3 .container .sub-head {
     margin: auto;
     margin-top: 20px;
 }
-.btn-2{
+
+.btn-2 {
     border: 1px solid var(--text-color-2);
     margin-top: 40px;
     display: inline-block;
@@ -238,30 +276,35 @@ section:nth-child(odd){
 
 
 /* ----------------- FOOTER-START ----------------- */
-#footer{
+#footer {
     min-height: 272px;
     width: 100%;
     background-color: var(--bg-color-1);
 }
-#footer .container{
+
+#footer .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: 90px 0px;
 }
-.name-2{
+
+.name-2 {
     font-size: var(--font-size-4);
     margin-bottom: 20px;
 }
-.right{
+
+.right {
     justify-self: right;
     align-self: center;
     margin-right: 75px;
 }
-.right i{
+
+.right i {
     font-size: var(--font-size-5);
     color: var(--text-color-1);
 }
+
 /* ----------------- FOOTER-END ----------------- */
 
 /* -------------------------------------------------- HOME-END -------------------------------------------------- */
@@ -282,31 +325,37 @@ section:nth-child(odd){
 
 
 /* -------------------------------------------------- ABOUT-START -------------------------------------------------- */
-#about{
+#about {
     text-align: center;
     width: 65%;
     margin: auto;
     padding: 100px 0px;
 }
-#about .sub-head{
+
+#about .sub-head {
     margin-top: 20px;
     font-size: var(--font-size-2);
 }
-#about .sub-head-2-1{
+
+#about .sub-head-2-1 {
     margin-top: 20px;
     font-size: var(--font-size-3);
 }
-#about .sub-head-2-2{
+
+#about .sub-head-2-2 {
     margin-top: 100px;
 }
-#about .para{
+
+#about .para {
     width: 75%;
     margin: auto;
     margin-top: 20px;
 }
-#about img{
+
+#about img {
     margin: 50px 0px;
 }
+
 /* -------------------------------------------------- ABOUT-END -------------------------------------------------- */
 
 
@@ -325,27 +374,33 @@ section:nth-child(odd){
 
 
 /* -------------------------------------------------- PRICING-START -------------------------------------------------- */
-#pricing{
+#pricing {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
     padding: 125px 0px;
 }
-#pricing .sub-head{
+
+#pricing .sub-head {
     grid-column: 1 / 4;
     font-size: var(--font-size-2);
-}.box-3{
+}
+
+.box-3 {
     margin-top: 100px;
     width: 95%;
 }
-.price{
+
+.price {
     font-style: italic;
     margin-top: 20px;
     font-family: var(--font-2);
 }
-#pricing .para{
+
+#pricing .para {
     margin-top: 40px;
 }
+
 /* -------------------------------------------------- PRICING-END -------------------------------------------------- */
 
 
@@ -364,27 +419,33 @@ section:nth-child(odd){
 
 
 /* -------------------------------------------------- CONTACT-START -------------------------------------------------- */
-#contact{
+#contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     padding: 100px 0px;
 }
-#contact .sub-head{
+
+#contact .sub-head {
     font-size: var(--font-size-2);
     margin-top: 20px;
 }
-#contact .para{
+
+#contact .para {
     width: 65%;
     margin-top: 30px;
 }
-#contact img{
+
+#contact img {
     justify-self: right;
 }
-#form{
+
+#form {
     padding: 50px 0px;
 }
-#contact input, .msg{
+
+#contact input,
+.msg {
     margin-top: 4px;
     background-color: #f1f1f1;
     width: 110%;
@@ -393,8 +454,374 @@ section:nth-child(odd){
     font-family: var(--font-2);
     border-radius: 2px;
 }
-#contact .btn{
+
+#contact .btn {
     display: inline-block;
     margin-top: 30px;
 }
+
 /* -------------------------------------------------- CONTACT-END -------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* -------------------------------------------------- MEDIA-QUERY-900px-START -------------------------------------------------- */
+@media screen and (max-width: 1080px) {
+    html {
+        font-size: 60%;
+    }
+
+    :root {
+        --bg-color-1: #f5fbff;
+        --bg-color-2: #FFFFFF;
+        --bg-color-3: #101126;
+        --btn-hover-color: #303260;
+        --font-size-1: 5rem;
+        --font-size-2: 3rem;
+        --font-size-3: 2.5rem;
+        --font-size-4: 2rem;
+        --font-size-5: 1.7rem;
+        --font-size-6: 1.2rem;
+        --font-1: 'Fira Sans', sans-serif;
+        --font-2: 'Montserrat', sans-serif;
+        --text-color-1: #101126;
+        --text-color-2: #FFFFFF;
+    }
+
+    .container {
+        width: 400px;
+        height: 100%;
+        margin: 0px auto;
+    }
+
+    .para {
+        font-size: var(--font-size-5);
+    }
+
+    .sub-head {
+        font-weight: 500;
+    }
+
+    .nav {
+        padding: 25px 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* background-color: pink; */
+    }
+
+    .nav a {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .name-1 {
+        margin-top: -10px;
+    }
+
+    #profile img {
+        width: 350px;
+        height: 100%;
+    }
+
+
+
+
+
+    #section-1 {
+        /* background-color: red; */
+        height: min-content;
+    }
+
+    #section-1 .container {
+        height: min-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, min-content);
+        grid-template-areas: "main-box"
+            "box-1"
+            "box-2"
+            "box-3";
+        gap: 0px;
+        /* background-color: aqua; */
+        padding: 50px 0px;
+    }
+
+    #section-1 .box {
+        margin: 0px;
+        width: 100%;
+    }
+
+    #section-1 .box1-1 {
+        margin-top: 60px;
+    }
+
+    #section-1 .box {
+        margin-bottom: 10px;
+    }
+
+    #section-1 .box .small-head {
+        margin: 0px;
+    }
+
+
+
+
+
+
+
+    #section-2 {
+        height: min-content;
+    }
+
+    #section-2 .container {
+        /* background-color: aqua; */
+        padding: 20px 0px;
+        display: block;
+    }
+
+    #section-2 .container .small-head {
+        margin-top: 20px;
+    }
+
+    #section-2 .container .sub-head {
+        font-size: var(--font-size-2);
+        margin-top: 20px;
+    }
+
+    #section-2 .container .box {
+        /* background-color: pink; */
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    #section-2 .container .box2-1 {
+        display: block;
+        height: min-content;
+        margin-top: 100x;
+    }
+
+    #section-2 .container .box2-2 {
+        /* width: 80%; */
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .writer {
+        margin-top: 25px;
+        font-size: var(--font-size-6);
+    }
+
+
+
+
+
+    /* ----------------- SECTION-3-START ----------------- */
+    #section-3 {
+        min-height: min-content;
+    }
+
+    #section-3 .container {
+        padding: 50px;
+    }
+
+    /* ----------------- SECTION-3-END ----------------- */
+
+
+
+
+
+    /* ----------------- FOOTER-START ----------------- */
+    #footer {
+        min-height: min-content;
+        background-color: var(--bg-color-1);
+    }
+
+    #footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 30px 0px;
+    }
+
+    .name-2 {
+        font-size: var(--font-size-4);
+        margin-bottom: 10px;
+    }
+
+    .right {
+        justify-self: right;
+        align-self: center;
+        margin-right: 0px;
+    }
+
+    .right i {
+        font-size: var(--font-size-5);
+        color: var(--text-color-1);
+        margin-left: 5px;
+    }
+
+    /* ----------------- FOOTER-END ----------------- */
+
+
+
+
+    /* -------------------------------------------------- ABOUT-START -------------------------------------------------- */
+    #about {
+        text-align: center;
+        width: 65%;
+        margin: auto;
+        padding: 30px 0px;
+    }
+
+    #about .sub-head {
+        margin-top: 20px;
+        font-size: var(--font-size-2);
+    }
+
+    #about .sub-head-2-1 {
+        margin-top: 20px;
+        font-size: var(--font-size-3);
+    }
+
+    #about .sub-head-2-2 {
+        margin-top: 50px;
+    }
+
+    #about .para {
+        margin: auto;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #about img {
+        width: 300px;
+        margin: 50px 0px 50px -20px;
+        display: block;
+        /* margin: auto; */
+    }
+
+    /* -------------------------------------------------- ABOUT-END -------------------------------------------------- */
+
+
+
+
+
+
+    /* -------------------------------------------------- PRICING-START -------------------------------------------------- */
+    #pricing {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        padding: 50px 10px;
+    }
+
+    #pricing .sub-head {
+        grid-column: 1 / 2;
+        font-size: var(--font-size-2);
+    }
+
+    .box-3 {
+        margin-top: 20px;
+        width: 95%;
+    }
+
+    .price {
+        font-style: italic;
+        margin-top: 10px;
+        font-family: var(--font-2);
+    }
+
+    #pricing .para {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    /* -------------------------------------------------- PRICING-END -------------------------------------------------- */
+
+
+
+
+
+
+
+
+    /* -------------------------------------------------- CONTACT-START -------------------------------------------------- */
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        padding: 50px 0px;
+        /* background-color: red; */
+    }
+
+    #contact .sub-head {
+        font-size: var(--font-size-2);
+        margin-top: 20px;
+    }
+
+    #contact .para {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    #contact img {
+        width: 350px;
+        margin: auto;
+    }
+
+    #form {
+        padding: 20px 0px;
+    }
+
+    #contact input,
+    .msg {
+        margin-top: 4px;
+        background-color: #f1f1f1;
+        width: 100%;
+        padding: 15px 20px;
+        font-size: var(--font-size-6);
+        font-family: var(--font-2);
+        border-radius: 2px;
+    }
+
+    #contact .btn {
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    /* -------------------------------------------------- CONTACT-END -------------------------------------------------- */
+
+}
+
+/* -------------------------------------------------- MEDIA-QUERY-900px-END -------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* -------------------------------------------------- MEDIA-QUERY-480px-START -------------------------------------------------- */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+    #header{
+        width: 100%;
+    }
+    #contact{
+        padding: 10px;
+ 
+    }
+    #section-3{
+        width: 100%;
+    }
+}
+
+/* -------------------------------------------------- MEDIA-QUERY-480px-END -------------------------------------------------- */

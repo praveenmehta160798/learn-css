@@ -1,8 +1,8 @@
 /* ----- BUTTONS FOR ALL PAGES START ----- */
 #my-buttons{
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right: 0%;
+    top: 50%;
     font-size: 30px;
     z-index: 1;
 }

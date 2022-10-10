@@ -41,6 +41,9 @@ section:nth-child(odd) {
     margin: auto;
     width: 63.75%;
 }
+.toggler, #toggler{
+    display: none;
+}
 
 .sub-head {
     font-size: var(--font-size-3);
@@ -506,17 +509,59 @@ a.active {
         font-weight: 500;
     }
 
+    #header .nav-bar{
+        overflow: hidden;
+    }
+    #toggler{
+        display: none;
+    }
+    .toggler{
+        display: block;
+        text-align: right;
+        float: right;
+        cursor: pointer;
+        padding: 20px 10px;
+        font-size: var(--font-size-4);
+    }
+    
+    #toggler:checked ~ .nav{
+        max-height: 240px;
+    }
     .nav {
+        /* padding: 24px 16px;
+        text-align: center; */
+        padding: 0;
+        transition: max-height 0.5s ease-in-out;
+        clear: both;
+        /* background-color: lightcoral; */
+        max-height: 0;
+    }
+    .nav a:hover, .active{
+        text-decoration: underline;
+        border: 1px solid white;
+    }
+
+    .nav a {
+        margin-left: 65px;
+        display: block;
+        text-align: center;
+        color: var(--text-color-1);
+        font-family: var(--font-2);
+        font-size: var(--font-size-6);
+        border-bottom: 1px solid var(--bg-color-1);
+        line-height: 20px;
+    }
+    /* .nav {
         padding: 25px 0px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        /* background-color: pink; */
+        background-color: pink;
     }
 
     .nav a {
         margin: 0px;
         text-align: center;
-    }
+    } */
 
     .name-1 {
         margin-top: -10px;

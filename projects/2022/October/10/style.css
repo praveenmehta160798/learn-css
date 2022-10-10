@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+:root{
+    --bg-color-1: #FFFFFF;
+    --bg-color-2: #F7F7F7;
+    --text-color-1: #000000;
+    --text-color-2: #E7290D;
+    --text-color-3: #ffffff;
+    --font-1: 'Cormorant Garamond', serif;
+    --font-2: sans-serif;
+    --font-size-1: 63px; 
+    --font-size-2: 32px; 
+    --font-size-3: 18px; 
+    --font-size-4: 16px; 
+;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: var(--font-1);
+    list-style: none;
+}
+/* ----------------- MAIN-AND-COMMON-START ----------------- */
+#header{
+    background-color: #ddd;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+    /* position: fixed; */
+    width: 100%;
+    /* z-index: 3; */
+}
+#header ul{
+    overflow: hidden;
+    background-color: white;
+}
+#header ul a{
+    display: block;
+    /* outline: 1px solid red; */
+    padding: 10px;
+    /* border: 1px solid blue; */
+}
+#header ul a:hover{
+    background-color: pink;
+}
+#header .logo{
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+#header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .3s ease-out;
+}
+#header .toggler-icon{
+    /* outline: 1px solid red; */
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+}
+#header .toggler-icon .hamburger{
+    background-color: black;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+    cursor: pointer;
+}
+#header .toggler-icon .hamburger::before{
+    background-color: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    transition: all .2s ease-out;
+}
+#header .toggler-icon .hamburger::after{
+    background-color: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    transition: all .2s ease-out;
+}
+#header .toggler{
+    display: none;
+}
+#header .toggler:checked ~ .menu{
+    max-height: 240px;
+}
+/* ----------------- MAIN-AND-COMMON-END ----------------- */
+
+
+
+
+/* ----------------- HEADER-START ----------------- */
+
+/* ----------------- HEADER-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-1-START ----------------- */
+#section-1{
+    background-color: #E7290D;
+    position: fixed;
+    top: 300px;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 30px;
+    transition: all 1s ease-in-out;
+}
+.nav a{
+    display: block;
+    background-color: aqua;
+}
+.nav a:hover{
+    background-color: pink;
+}
+#section-1 input{
+    display: none;
+}
+.pic{
+    float: left;
+}
+.clicker-icon{
+    float: right;
+    /* position: relative; */
+    cursor: pointer;
+}
+.nav{
+    position: relative;
+    top: 20px;
+    clear: both;
+    /* display: none; */
+    max-height: 0;
+    transition: all 1s ease;
+}
+input:checked ~ .nav{
+    max-height: 240px;
+    /* display: block; */
+}
+/* ----------------- SECTION-1-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-2-START ----------------- */
+/* ----------------- SECTION-2-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-3-START ----------------- */
+/* ----------------- SECTION-3-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-4-START ----------------- */
+/* ----------------- SECTION-4-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-5-START ----------------- */
+/* ----------------- SECTION-5-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-6-START ----------------- */
+/* ----------------- SECTION-6-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-7-START ----------------- */
+/* ----------------- SECTION-7-END ----------------- */
+
+
+
+
+/* ----------------- FOOTER-START ----------------- */
+/* ----------------- FOOTER-END ----------------- */
+
+
+

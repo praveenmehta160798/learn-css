@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- FONT-AWESOME-CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- BUTTONS CSS -->
+    <link rel="stylesheet" href="../../../../../style.css">
+    <!-- BUTTONS CSS -->
+
+    <style>
+        #section-6 {
+            background-color: var(--bg-color-3);
+        }
+        #section-1 .container{
+            margin-top: 225px;
+            text-align: left;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+        }
+        #section-1 .container .sub-heading{
+            grid-column: 1/3;
+            margin-bottom: 80px;
+        }
+        .main-box{
+            grid-column: 2/3;
+            grid-row: 2/4;
+
+
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .para{
+            padding: 10px 115px 10px 0px;
+        }
+        #section-1 .img, #section-1 img{
+            margin-top: -50px;
+            text-align: center;
+            width: 100%;
+        }
+        .list-head{
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 920px){
+            #section-1 .container{
+                display: block;
+                margin-top: 150px
+            }
+            #section-1 .container .sub-heading{
+                margin-bottom: 0px;
+            }
+            .para{
+                padding: 10px 0px 10px 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BUTTONS FOR ALL PAGES - START-->
+    <div id="my-buttons">
+        <a href="../../../../index.html" class="my-home-button my-button">
+            <img src="https://praveenmehta160798.github.io/learn-css/home-icon.png" alt="home-icon">
+        </a>
+        <!-- <a href="" class="my-back-button my-button">
+            <img src="https://praveenmehta160798.github.io/learn-css/left-arrow-icon.png" alt="left-arrow-icon">
+        </a> -->
+    </div>
+    <!-- BUTTONS FOR ALL PAGES - END -->
+
+
+    <div id="container">
+
+        <!-- ----------------- HEADER-START ----------------- -->
+        <header id="header">
+            <div class="container">
+
+                <div id="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-bar">
+                    <input type="checkbox" name="" id="toggler">
+                    <label for="toggler" class="toggler"><i class="fa-solid fa-bars"></i></label>
+                    <div class="nav">
+                        <a href="../index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a class="active" href="#">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ----------------- HEADER-END ----------------- -->
+
+
+
+
+        <!-- ----------------- SECTION-1-START ----------------- -->
+        <section id="section-1">
+            <div class="container">
+                <div class="sub-heading">We can cater to all of your needs</div>
+                <div class="para">From small, family events to grand corporate gatherings, we offer a huge variety of
+                    services here at Belton. Let us know exactly what your needs are and we will do our very best to
+                    make your event memorable.</div>
+                <div class="para">Even if you don’t see your occasion listed below, we encourage you to get in touch.
+                    We’ll be glad to provide you with a custom quote.</div>
+                <div class="main-box">
+                    <div class="list">
+                        <div class="list-head">SERVICES</div>
+                        <div class="list-item">
+                            <div class="item">— Birthdays;</div>
+                            <div class="item">— Anniversaries;</div>
+                            <div class="item">— Christenings;</div>
+                            <div class="item">— Weddings;</div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-head">EXTRA SERVICES</div>
+                        <div class="list-item">
+                            <div class="item">— Plate and glass rental;</div>
+                            <div class="item">— Table decor;</div>
+                            <div class="item">— Allergy-friendly menus;</div>
+                            <div class="item">— Dessert table;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="../img/img-09.jpg" alt="img-09">
+                </div>
+                <div class="img">
+                    <img src="../img/img-10.jpg" alt="img-10">
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- ----------------- SECTION-1-END ----------------- -->
+
+
+
+
+
+    <!-- ----------------- SECTION-6-START ----------------- -->
+    <section id="section-6">
+        <div class="container">
+
+            <div class="sub-heading">First, we eat. Then we do everything else. Let us take care of food at your
+                special
+                event.</div>
+            <div class="btn">
+                <a href="contact.html">Get in touch</a>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------- SECTION-6-END ----------------- -->
+
+
+
+
+    <!-- ----------------- FOOTER-START ----------------- -->
+    <footer id="footer">
+        <div class="container">
+
+            <div class="box">
+                <div class="logo">Belton Catering</div>
+                <div class="para">We’re a catering business serving the Greater Chicago area, and making sure your
+                    event
+                    is remembered for all the delicious food.</div>
+            </div>
+            <div class="box right">
+                <div class="logo">Contacts</div>
+                <div class="para">hello@belton.com <br> +5363-84635-837</div>
+            </div>
+        </div>
+    </footer>
+    <!-- ----------------- FOOTER-END ----------------- -->
+
+    </div>
+</body>
+
+</html>

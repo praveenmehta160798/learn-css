@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- FONT-AWESOME-CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- BUTTONS CSS -->
+    <link rel="stylesheet" href="../../../../../style.css">
+    <!-- BUTTONS CSS -->
+
+    <style>
+        #section-6 {
+            background-color: var(--bg-color-2);
+        }
+
+        #section-1 {
+            margin-top: 225px;
+            text-align: left;
+        }
+
+        #section-1 .sub-heading {
+            text-align: left;
+        }
+
+        .main-box {
+            /* margin-top: 100px; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 920px) {
+            .main-box {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            #section-1 {
+                margin-top: 150px;
+            }
+
+            #section-1 .sub-heading {
+                text-align: center;
+            }
+            .img img{
+                margin-top: -60px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BUTTONS FOR ALL PAGES - START-->
+    <div id="my-buttons">
+        <a href="../../../../index.html" class="my-home-button my-button">
+            <img src="https://praveenmehta160798.github.io/learn-css/home-icon.png" alt="home-icon">
+        </a>
+        <!-- <a href="" class="my-back-button my-button">
+            <img src="https://praveenmehta160798.github.io/learn-css/left-arrow-icon.png" alt="left-arrow-icon">
+        </a> -->
+    </div>
+    <!-- BUTTONS FOR ALL PAGES - END -->
+
+
+    <div id="container">
+
+        <!-- ----------------- HEADER-START ----------------- -->
+        <header id="header">
+            <div class="container">
+
+                <div id="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-bar">
+                    <input type="checkbox" name="" id="toggler">
+                    <label for="toggler" class="toggler"><i class="fa-solid fa-bars"></i></label>
+                    <div class="nav">
+                        <a href="../index.html">Home</a>
+                        <a class="active" href="#">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ----------------- HEADER-END ----------------- -->
+
+
+
+
+        <!-- ----------------- SECTION-1-START ----------------- -->
+        <section id="section-1">
+            <div class="container">
+                <div class="sub-heading">Here’s our story</div>
+                <div class="main-box">
+                    <div class="para">We started out at our home kitchen, whipping up finger-foods for our friends’
+                        weddings and nieces’ birthdays. Everyone loved our food and our innovative combinations of
+                        flavors.</div>
+                    <div class="para">So, what started out as a family operated business quickly grew into a
+                        fully-fledged small business that we operate out of our professional catering kitchen in
+                        Lisle. The team has also grown to 6 people; we can cater at events as large as 1,000 people.
+                    </div>
+                    <div class="img">
+                        <img src="../img/img-07.jpg" alt="img-07">
+                    </div>
+                    <div class="img">
+                        <img src="../img/img-08.jpg" alt="img-08">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ----------------- SECTION-1-END ----------------- -->
+
+
+
+
+
+        <!-- ----------------- SECTION-6-START ----------------- -->
+        <section id="section-6">
+            <div class="container">
+
+                <div class="sub-heading">First, we eat. Then we do everything else. Let us take care of food at your
+                    special
+                    event.</div>
+                <div class="btn">
+                    <a href="contact.html">Get in touch</a>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- SECTION-6-END ----------------- -->
+
+
+
+
+        <!-- ----------------- FOOTER-START ----------------- -->
+        <footer id="footer">
+            <div class="container">
+
+                <div class="box">
+                    <div class="logo">Belton Catering</div>
+                    <div class="para">We’re a catering business serving the Greater Chicago area, and making sure your
+                        event
+                        is remembered for all the delicious food.</div>
+                </div>
+                <div class="box right">
+                    <div class="logo">Contacts</div>
+                    <div class="para">hello@belton.com <br> +5363-84635-837</div>
+                </div>
+            </div>
+        </footer>
+        <!-- ----------------- FOOTER-END ----------------- -->
+
+    </div>
+</body>
+
+</html>

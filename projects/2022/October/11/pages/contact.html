@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- FONT-AWESOME-CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- BUTTONS CSS -->
+    <link rel="stylesheet" href="../../../../../style.css">
+    <!-- BUTTONS CSS -->
+
+    <style>
+        input, textarea{
+            background-color: antiquewhite;
+            width: 100%;
+            
+        }
+        #section-1 .sub-heading{
+            margin-top: 20px;
+        }
+        #section-1 .form{
+            padding: 0px 80px;
+        }
+        .form input[type="text"], textarea{
+            font-size: var(--font-size-d-4);
+            padding: 15px;
+            background-color: #f1f1f1;
+        }
+        .form label{
+            margin-top: 20px;
+        }
+
+        #section-1 .container{
+            text-align: left;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @media screen and (max-width: 920px){
+            #section-1 .container{
+                grid-template-columns: 1fr;
+            }
+            #section{
+                padding: 0;
+            }
+            #section-1 .form{
+                margin-top: 20px;
+            padding: 0px;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- BUTTONS FOR ALL PAGES - START-->
+    <div id="my-buttons">
+        <a href="../../../../index.html" class="my-home-button my-button">
+            <img src="https://praveenmehta160798.github.io/learn-css/home-icon.png" alt="home-icon">
+        </a>
+        <!-- <a href="" class="my-back-button my-button">
+            <img src="https://praveenmehta160798.github.io/learn-css/left-arrow-icon.png" alt="left-arrow-icon">
+        </a> -->
+    </div>
+    <!-- BUTTONS FOR ALL PAGES - END -->
+
+
+    <div id="container">
+
+        <!-- ----------------- HEADER-START ----------------- -->
+        <header id="header">
+            <div class="container">
+
+                <div id="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-bar">
+                    <input type="checkbox" name="" id="toggler">
+                    <label for="toggler" class="toggler"><i class="fa-solid fa-bars"></i></label>
+                    <div class="nav">
+                        <a href="../index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a class="active" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ----------------- HEADER-END ----------------- -->
+
+
+
+
+        <!-- ----------------- SECTION-1-START ----------------- -->
+        <section id="section-1">
+            <div class="container">
+                <div class="hello">
+                    <div class="sub-heading">Say Hello!</div>
+                    <div class="para">We’re a friendly bunch here at Belton. Place an inquiry and we’ll get back to you the same day.</div>
+                </div>
+                <div class="form">
+                    <label for="">Name*</label>
+                    <br>
+                    <input type="text" placeholder="Your name">
+                    <br>
+                    
+                    <label for="">Last name</label>
+                    <br>
+                    <input type="text" placeholder="Your last name">
+                    <br>
+                    
+                    <label for="">Your email*</label>
+                    <br>
+                    <input type="text" placeholder="Your email address">
+                    <br>
+                    
+                    <label for="">Message*</label>
+                    <br>
+                    <textarea name="" id="" cols="" rows="3" placeholder="Enter your message"></textarea>
+                    <br>
+                    
+                    <div class="btn">
+                        <input type="button" value="Send Message">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- SECTION-1-END ----------------- -->
+
+
+
+
+
+        <!-- ----------------- FOOTER-START ----------------- -->
+        <footer id="footer">
+            <div class="container">
+
+                <div class="box">
+                    <div class="logo">Belton Catering</div>
+                    <div class="para">We’re a catering business serving the Greater Chicago area, and making sure your
+                        event
+                        is remembered for all the delicious food.</div>
+                </div>
+                <div class="box right">
+                    <div class="logo">Contacts</div>
+                    <div class="para">hello@belton.com <br> +5363-84635-837</div>
+                </div>
+            </div>
+        </footer>
+        <!-- ----------------- FOOTER-END ----------------- -->
+
+    </div>
+</body>
+
+</html>

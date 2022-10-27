@@ -21,8 +21,10 @@
     filter: invert(100%);
 }
 .my-button:hover{
-    box-shadow: inset 3px 3px 3px black, inset -3px -3px 3px white;
     opacity: 1;
+}
+.my-button:active{
+    box-shadow: inset 3px 3px 3px black, inset -3px -3px 3px white;
 }
 /* ----- BUTTONS FOR ALL PAGES END ----- */
 

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+
+:root {
+    --bg-color-1: #000;
+
+    --text-color-1: #808080;
+    --text-color-2: #ffffff;
+    --text-color-3: #1bc38e;
+
+    --font-1: 'Josefin Sans', sans-serif;
+
+    --font-size-1: 32px;
+    --font-size-2: 16px;
+    --font-size-3: 12px;
+}
+
+/* ----------------- MAIN-AND-COMMON-START ----------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: var(--font-1);
+}
+
+body {
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+}
+
+a {
+    color: var(--text-color-1);
+}
+
+/* ----------------- MAIN-AND-COMMON-END ----------------- */
+
+
+
+
+/* ----------------- HEADER-START ----------------- */
+#header .container {
+    width: 100%;
+    padding: 30px 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: var(--font-size-1);
+    color: var(--text-color-2);
+}
+
+#header .container .logo:hover {
+    color: var(--text-color-1);
+    cursor: pointer;
+}
+
+.nav-bar {
+    width: 450px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: var(--font-size-3);
+    text-transform: uppercase;
+}
+
+.nav-item a {
+    letter-spacing: 1px;
+}
+
+.nav-item a:hover,
+.active a {
+    color: var(--text-color-3);
+}
+
+.social-link {
+    font-size: var(--font-size-2);
+    width: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-link a:hover {
+    color: var(--text-color-2);
+}
+
+/* ----------------- HEADER-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-1-START ----------------- */
+#section-1 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    aspect-ratio: 1;
+}
+
+.content-box {
+    width: 31%;
+    aspect-ratio: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow::before {
+    content: "";
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 73, 94, 0.3);
+}
+
+.content-box:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.content-box-1 {
+    background-image: url(img/img\ \(1\).webp);
+}
+
+.content-box-2 {
+    background-image: url(img/img\ \(2\).webp);
+}
+
+.content-box-3 {
+    background-image: url(img/img\ \(3\).webp);
+}
+
+.content-box-4 {
+    background-image: url(img/img\ \(4\).webp);
+}
+
+.content-box-5 {
+    background-image: url(img/img\ \(5\).webp);
+}
+
+.content-box-6 {
+    background-image: url(img/img\ \(6\).webp);
+}
+
+.content-box-7 {
+    background-image: url(img/img\ \(7\).webp);
+}
+
+.content-box-8 {
+    background-image: url(img/img\ \(8\).webp);
+}
+
+.content-box-9 {
+    background-image: url(img/img\ \(9\).webp);
+}
+
+.content-box .logo {
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.btn {
+    z-index: 1;
+}
+
+.btn a {
+    padding: 8px 24px;
+    border: 2px solid var(--text-color-2);
+    display: inline-block;
+    color: var(--text-color-2);
+    text-transform: uppercase;
+    font-size: var(--font-size-3);
+}
+
+.btn a:hover {
+    color: var(--bg-color-1);
+    background-color: var(--text-color-2);
+}
+
+/* ----------------- SECTION-1-END ----------------- */
+
+
+
+/* ----------------- FOOTER-START ----------------- */
+#footer .text a {
+    color: var(--text-color-3);
+}
+
+#footer .container {
+    text-align: center;
+    padding: 24px 0px;
+}
+
+/* ----------------- FOOTER-END ----------------- */
+
+/* ------------------------------ SERVICES-START ------------------------------ */
+/* ----------------- SECTION-1-START ----------------- */
+.main-box .box-2{
+    width: 31%;
+    aspect-ratio: 1.8;
+    background-color: #1bc38e;
+}
+/* ----------------- SECTION-1-END ----------------- */
+/* ------------------------------ SERVICES-END ------------------------------ */

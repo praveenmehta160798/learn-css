@@ -23,7 +23,7 @@
 
     <!-- BUTTONS FOR ALL PAGES - START-->
     <div id="my-buttons">
-        <a href="../../../../index.html" class="my-home-button my-button">
+        <a href="../../../../../index.html" class="my-home-button my-button">
             <img src="https://praveenmehta160798.github.io/learn-css/home-icon.png" alt="home-icon">
         </a>
         <!-- <a href="" class="my-back-button my-button">
@@ -40,20 +40,27 @@
             <div class="container">
                 <div class="logo">Photosen</div>
 
-                <div class="nav-bar">
-                    <div class="nav-item"><a href="../index.html">Home</a></div>
-                    <div class="nav-item"><a href="gallery.html">Gallery <i class="fa-sharp fa-solid fa-chevron-down"></i></a>
-                    </div>
-                    <div class="nav-item"><a href="services.html">Services</a></div>
-                    <div class="nav-item"><a href="about.html">About</a></div>
-                    <div class="nav-item active"><a href="#">Contact</a></div>
-                </div>
+                <input type="checkbox" class="toggler" id="toggler">
+                <label for="toggler" class="toggler-icon"><span class="hamburger"></span></label>
 
-                <div class="social-link">
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/login?lang=en"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <div class="navigation">
+
+                    <div class="nav-bar">
+                        <div class="nav-item"><a href="../index.html">Home</a></div>
+                        <div class="nav-item"><a href="gallery.html">Gallery <i
+                                    class="fa-sharp fa-solid fa-chevron-down"></i></a>
+                        </div>
+                        <div class="nav-item"><a href="services.html">Services</a></div>
+                        <div class="nav-item"><a href="about.html">About</a></div>
+                        <div class="nav-item  active"><a href="#">Contact</a></div>
+                    </div>
+
+                    <div class="social-link">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/login?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -61,9 +68,59 @@
 
 
 
-
+        
         <!-- ----------------- SECTION-1-START ----------------- -->
         <section id="section-1">
+            <h3 class="heading">Contact</h3>
+            <div id="contact">
+                <div class="form">
+                    <div class="form-name">
+
+                        <div class="f-name-box">
+                            <label for="">First Name</label>
+                            <input type="text">
+                        </div>
+                        
+                        <div class="l-name-box">
+                            <label for="">Last Name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="email-box">
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="subject-box">
+                        <label for="">Subject</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="msg-box">
+                        <label for="">Message</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Write your notes or questions here..."></textarea>
+                    </div>
+
+                    <div class="btn">
+                        <a href="">Send Message</a>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="add-box">
+                        <label for="">Address</label>
+                        <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
+                    <div class="phone-box">
+                        <label for="">Phone</label>
+                        <p>+1 232 3235 324</p>
+                    </div>
+                    <div class="email-box">
+                        <label for="">Email Address</label>
+                        <p>youremail@domain.com</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- ----------------- SECTION-1-END ----------------- -->
 

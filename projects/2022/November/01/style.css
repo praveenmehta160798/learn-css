@@ -21,7 +21,7 @@
 
 /* ----------------- HEADER-START ----------------- */
 .btn{
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     border-radius: 10px;

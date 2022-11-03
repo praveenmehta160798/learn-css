@@ -1,0 +1,214 @@
+:root{
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+/* ----------------- MAIN-AND-COMMON-START ----------------- */
+body{
+    background-color: black;
+}
+/* ----------------- MAIN-AND-COMMON-END ----------------- */
+
+
+
+
+/* ----------------- HEADER-START ----------------- */
+/* ----------------- HEADER-END ----------------- */
+
+
+
+
+/* ----------------- ANIMATION-START ----------------- */
+.rings{
+    /* margin: auto; */
+    border: 1px solid black;
+    max-width: 1200px;
+    aspect-ratio: 3;
+    margin: 10% auto;
+
+
+    display: flex;
+}
+.ring{
+    width: 400px;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    animation: ring 1s linear 0s infinite ;
+    
+    position: relative;
+}
+.ring::before{
+    display: block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    position: relative;
+}
+@keyframes ring {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.ring1{
+    /* animation-direction: reverse; */
+    
+    left: 13%;
+    border: 10px solid red;
+    border-left: 10px solid transparent;
+}
+.ring1::before{
+    background-color: red;
+    left: 7%;
+    top: 7%;
+
+    box-shadow: 0px 0px 100px 50px  red;
+}
+.ring2{
+    top: 32%;
+    right: 8%;
+    border: 10px solid green;
+    border-top: 10px solid transparent;
+}
+.ring2::before{
+    box-shadow: 0px 0px 100px 50px  green;
+    background-color: green;    
+    /* left: 80%; */
+    top: 7%;
+    left: 80%;
+}
+.ring3{
+    animation-direction: reverse;
+    
+    right: 30%;
+    border: 10px solid blue;
+    border-bottom: 10px solid transparent;
+}
+.ring3::before{
+    background-color: blue;
+    top: 80%;
+    left: 80%;
+    box-shadow: 0px 0px 100px 50px  blue;
+}
+.ring4{
+    border: 10px solid aqua;
+    border-bottom: 10px solid transparent;
+    bottom: 34%;
+    right: 75%;
+}
+.ring4::before{
+    background-color: aqua;
+    top: 80%;
+    left: 7%;
+    box-shadow: 0px 0px 100px 50px  aqua;
+}
+/* ----------------- ANIMATION-END ----------------- */
+
+
+
+
+/* ----------------- FOOTER-START ----------------- */
+/* ----------------- FOOTER-END ----------------- */
+
+
+
+@media screen and (max-width: 768px) {
+    .rings{
+        /* margin: auto; */
+        border: 1px solid black;
+        max-width: 700px;
+        aspect-ratio: 3;
+        margin: 30% auto;
+    
+    
+        display: flex;
+    }
+    .ring{
+        width: 400px;
+        aspect-ratio: 1;
+    
+        border-radius: 50%;
+    
+        animation: ring 1s linear 0s infinite ;
+        
+        position: relative;
+    }
+    .ring::before{
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    
+        position: relative;
+    }
+    @keyframes ring {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(-360deg);
+        }
+    }
+    .ring1{
+        
+        left: 13%;
+        border: 5px solid red;
+        border-left: 5px solid transparent;
+    }
+    .ring1::before{
+        background-color: red;
+        left: 5%;
+        top: 5%;
+    
+        box-shadow: 0px 0px 100px 50px  red;
+    }
+    .ring2{
+        top: 32%;
+        right: 8%;
+        border: 5px solid green;
+        border-top: 5px solid transparent;
+    }
+    .ring2::before{
+        box-shadow: 0px 0px 100px 50px  green;
+        background-color: green;    
+        /* left: 80%; */
+        top: 5%;
+        left: 78%;
+    }
+    .ring3{
+        animation-direction: reverse;
+        
+        right: 30%;
+        border: 5px solid blue;
+        border-bottom: 5px solid transparent;
+    }
+    .ring3::before{
+        background-color: blue;
+        top: 78%;
+        left: 78%;
+        box-shadow: 0px 0px 100px 50px  blue;
+    }
+    .ring4{
+        border: 5px solid aqua;
+        border-bottom: 5px solid transparent;
+        bottom: 34%;
+        right: 75%;
+    }
+    .ring4::before{
+        background-color: aqua;
+        top: 78%;
+        left: 5%;
+        box-shadow: 0px 0px 100px 50px  aqua;
+    }
+}

@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+	box-sizing: border-box;
+}
+/* ----------------- MAIN-AND-COMMON-START ----------------- */
+
+/* ----------------- MAIN-AND-COMMON-END ----------------- */
+
+
+
+
+/* ----------------- HEADER-START ----------------- */
+#header{
+	width: 10%;
+	margin: auto;
+	margin-top: 50px;
+}
+.box{
+	font-size: 50px;
+	padding: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all 0.1s linear;
+	cursor: pointer;
+	width: 70px;
+	max-height: 75px;
+}
+.box:nth-child(1):hover{width: 290px;color: white;background: blue;border: none;}
+.box:nth-child(2):hover{width: 230px;color: white;background: aqua;border: none;}
+.box:nth-child(3):hover{width: 300px;color: white;background: purple;border: none;}
+.box:nth-child(4):hover{width: 275px;color: white;background: red;border: none;}
+span{
+	display: none;
+}
+.box:hover span{
+	display: inline;
+}
+.box:nth-child(1){
+	border: 1px solid blue;
+	color: blue;
+}
+.box:nth-child(2){
+	border: 1px solid aqua;
+	color: aqua;
+}
+.box:nth-child(3){
+	border: 1px solid purple;
+	color: purple;
+	width: 70px;
+}
+.box:nth-child(4){
+	border: 1px solid red;
+	color: red;
+	width: 80px;
+}
+/* ----------------- HEADER-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-1-START ----------------- */
+/* ----------------- SECTION-1-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-2-START ----------------- */
+/* ----------------- SECTION-2-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-3-START ----------------- */
+/* ----------------- SECTION-3-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-4-START ----------------- */
+/* ----------------- SECTION-4-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-5-START ----------------- */
+/* ----------------- SECTION-5-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-6-START ----------------- */
+/* ----------------- SECTION-6-END ----------------- */
+
+
+
+
+/* ----------------- SECTION-7-START ----------------- */
+/* ----------------- SECTION-7-END ----------------- */
+
+
+
+
+/* ----------------- FOOTER-START ----------------- */
+/* ----------------- FOOTER-END ----------------- */
+
+
+

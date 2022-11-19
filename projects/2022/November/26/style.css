@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+	box-sizing: border-box;
+}
+/* ----------------- MAIN-START ----------------- */
+body{
+	width: fit-content;
+	height: 100vh;
+	background: linear-gradient(to bottom, #00A4E4, #FEFEFE);
+	overflow: hidden;
+}
+.bubble{
+	position: absolute;
+	bottom: -30%;
+	width: 10%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	/*
+	background: rgba(0, 164, 228, 0.2);
+	background: black;
+	*/
+	opacity: 0.4;
+	box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.5) inset;
+	overflow: hidden;
+	
+	animation-name: bubbleUp;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes bubbleUp{
+	100%{
+		bottom: 120%;
+	}
+}
+.bubble::before{
+	content: "";
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	left: 20%;
+	top: 15%;
+	box-shadow: 0px 0px 10px 6px rgba(255, 255, 255, 0.5);
+}
+/* ----------------- MAIN-END ----------------- */

@@ -1,0 +1,364 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+	box-sizing: border-box;
+}
+/* ----------------- MAIN-AND-COMMON-START ----------------- */
+
+/* ----------------- MAIN-AND-COMMON-END ----------------- */
+
+
+
+
+/* ----------------- MAIN-START ----------------- */
+#main{
+	width: 80%;
+	background: pink;
+	margin: auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#main > div{
+	text-align: center;
+	position: relative;
+	margin: 20px;
+	overflow: hidden;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+
+.hover-text{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(5,103,211,0.5);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 0.5s;
+}
+.hover-text h1{
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.hover-text p{
+	margin-top: 20px;
+}
+
+/*--------------------------------Effect 1------------------------------*/
+/* 01-effect */
+.effect-01 .hover-text{
+	left: -100%;
+	top: 0%;
+}
+.effect-01:hover > .hover-text{
+	left: 0;
+}
+
+
+/* 02-effect */
+.effect-02 .hover-text{
+	left: 0%;
+	top: -100%;
+}
+.effect-02:hover > .hover-text{
+	top: 0;
+}
+
+
+/* 03-effect */
+.effect-03 .hover-text{
+	top: 0%;
+	left: 100%;
+}
+.effect-03:hover > .hover-text{
+	left: 0;
+}
+
+
+/* 04-effect */
+.effect-04 .hover-text{
+	left: 0%;
+	top: 100%;
+}
+.effect-04:hover > .hover-text{
+	top: 0;
+}
+/*--------------------------------Effect 1------------------------------*/
+
+
+/*--------------------------------Effect 2------------------------------*/
+/*05-effect*/
+
+.effect-05 .hover-text{
+	top:50%;
+	left: 50%;
+	width: 0%;
+	height: 0%;
+	overflow: hidden;
+}
+.effect-05:hover .hover-text{
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+}
+.effect-05 .hover-text h1,
+.effect-05 .hover-text p{
+	font-size: 0px;
+	transition: all 0.5s;
+}
+.effect-05:hover .hover-text h1{
+	font-size: 40px;
+}
+.effect-05:hover .hover-text p{
+	font-size: 20px;
+}
+/*--------------------------------Effect 2------------------------------*/
+
+
+/*--------------------------------Effect 3------------------------------*/
+
+/*06 effect*/
+.box-1 .hover-text{
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+.box-1 img{
+	backface-visibility: hidden;
+}
+.box-1{
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.effect-06:hover > .box-1{
+	transform: rotateY(180deg);
+}
+/*--------------------------------Effect 3------------------------------*/
+
+
+
+/*--------------------------------Effect 4------------------------------*/
+
+/*07 effect*/
+.effect-07 > .hover-text{
+	background: none;
+	display: none;
+	transition-delay: 0.5s;
+}
+.effect-07:hover > .box-2{
+	top: 0;
+	left: 0;
+}
+.effect-07:hover > .hover-text{
+	display: block;
+	margin-top: 100px;
+}
+.box-2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+}
+.box-2-1{
+	border: 160px solid transparent;
+	border-top: 160px solid rgba(5,103,211,0.5);
+	top: -53%;
+}
+.box-2-2{
+	border: 160px solid transparent;
+	border-right: 160px solid rgba(5,103,211,0.5);
+	left: 40%;
+}
+.box-2-3{
+	border: 160px solid transparent;
+	border-bottom: 160px solid rgba(5,103,211,0.5);
+	top: 48%;
+}
+.box-2-4{
+	border: 160px solid transparent;
+	border-left: 160px solid rgba(5,103,211,0.5);
+	left: -40%;
+}
+/*--------------------------------Effect 4------------------------------*/
+
+
+/*--------------------------------Effect 5------------------------------*/
+.effect-08 > .hover-text{
+	background: none;
+	display: none;
+	transition: all 0.8s;
+}
+.box-3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+	border: 160px solid transparent;
+}
+.box-3-1{
+	border: 160px solid transparent;
+	border-top: 160px solid rgba(5,103,211,0.5);
+	top: -53%;
+	transition-delay: 0.1s;
+}
+.box-3-2{
+	border: 160px solid transparent;
+	border-right: 160px solid rgba(5,103,211,0.5);
+	left: 40%;
+	transition-delay: 0.2s;
+}
+.box-3-3{
+	border: 160px solid transparent;
+	border-bottom: 160px solid rgba(5,103,211,0.5);
+	top: 48%;
+	transition-delay: 0.3s;
+}
+.box-3-4{
+	border: 160px solid transparent;
+	border-left: 160px solid rgba(5,103,211,0.5);
+	left: -40%;
+	transition-delay: 0.4s;
+}
+.effect-08:hover > .box-3{
+	top: 0;
+	left: 0;
+}
+.effect-08:hover > .hover-text{
+	display: block;
+	margin-top: 100px;
+}
+/*--------------------------------Effect 5------------------------------*/
+
+
+/*--------------------------------Effect 6------------------------------*/
+.effect-09 .box-4{
+	width: 100%;
+	height: 100%;
+}
+.box-4-1 img{
+	transition: all 0.2s;
+	position: relative;
+}
+.effect-09 .box-4:hover > .box-4-1 img{
+	width: 0%;
+}
+.effect-09 .box-4 .hover-text{
+	left: 50%;
+	width: 0%;
+	height: 0%;
+	overflow: hidden;
+}
+.effect-09 .box-4:hover > .hover-text{
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+/*--------------------------------Effect 6------------------------------*/
+
+
+
+/*--------------------------------Effect 7------------------------------*/
+.effect-10 .hover-text p{
+	margin-top: 0px;
+}
+.effect-10 .hover-text{
+	transform: scale(1);
+	opacity: 1;
+}
+.circle{
+	width: 100%;
+	height: 100%;
+	background: white;
+	position: absolute;
+	transition: all 0.5s;
+	opacity: 0;
+	transform: scale(0);
+	border-radius: 50%;
+}
+.effect-10:hover .hover-text{	
+	transform: scale(0);
+	opacity: 0;
+}
+.effect-10:hover > .circle{
+	animation: circle 0.5s linear 1;
+}
+@keyframes circle{
+	0%{
+	transform: scale(0);
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.3;
+	}
+	100%{
+	transform: scale(2);
+		opacity: 0;
+	}
+}
+/*--------------------------------Effect 7------------------------------*/
+
+
+/*--------------------------------Effect 8------------------------------*/
+.effect-11 .hover-text{
+	height: 25%;
+	top: 74%;
+}
+.effect-11 .hover-text p{
+	margin-top: 0px;
+}
+.effect-11 .box-6 img{
+	transition: all 0.5s;
+}
+.effect-11:hover > .box-6 img{
+	transform: scale(1.1);
+}
+/*--------------------------------Effect 8------------------------------*/
+
+
+
+/*--------------------------------Effect 9------------------------------*/
+.effect-13{
+	
+}
+.effect-13 .hover-text{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	padding: 10px;
+	top: calc(50% - 125px);
+	left: calc(50% - 125px);
+}
+.effect-13:hover .hover-text{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	background: none;
+}
+.effect-13:hover .hover-text h1,
+.effect-13:hover .hover-text p{
+	opacity: 0;
+}
+.effect-13 .hover-text h1,
+.effect-13 .hover-text p{
+	transition: all 0.5s 0.1s;
+}
+
+/*--------------------------------Effect 9------------------------------*/
+
+
+
+/* ----------------- MAIN-END ----------------- */

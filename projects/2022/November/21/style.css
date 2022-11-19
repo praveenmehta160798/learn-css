@@ -1,25 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-
-:root{
-    --bg-color-1: #FFFFFF;
-    --bg-color-2: #F7F7F7;
-    --text-color-1: #000000;
-    --text-color-2: #E7290D;
-    --text-color-3: #ffffff;
-    --font-1: 'Cormorant Garamond', serif;
-    --font-2: sans-serif;
-    --font-size-1: 63px; 
-    --font-size-2: 32px; 
-    --font-size-3: 18px; 
-    --font-size-4: 16px; 
-;
-}
-
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family: var(--font-1);
+    font-family: sans-serif;
 }
 /* ----------------- MAIN-AND-COMMON-START ----------------- */
 
@@ -29,6 +12,64 @@
 
 
 /* ----------------- HEADER-START ----------------- */
+#mainBox{
+	width: 400px;
+	height: 500px;
+	margin: 100px auto;
+	background: linear-gradient(to left bottom, red -10%, red, blue, blue 115%);
+	position: relative;
+	
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	
+	transition: all 1s ease-in-out;
+}
+#box{
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to left bottom, red 15%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, blue 80%);
+	opacity: 0;
+	position: relative;
+	transition: all 1s ease-in-out;
+}
+#mainBox:hover{
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}	
+#box:hover{
+	opacity: 1;
+}
+#box:hover ~ .circle{
+	opacity: 1;
+}
+#box:hover ~ #circle1{
+	top: -75px;
+	right: -75px;
+}
+#box:hover ~ #circle2{
+	bottom: -100px;
+	left: -100px;
+}
+.circle{
+	aspect-ratio: 1;
+	border-radius: 50%;
+	position: absolute;
+	opacity: 0;
+	
+	transition: all 1s ease-in-out;
+}
+#circle1{
+	top: -35px;
+	right: -35px;
+	width: 150px;
+	background: red;
+}
+#circle2{
+	bottom: -60px;
+	left: -60px;
+	width: 200px;
+	background: blue;
+}
 /* ----------------- HEADER-END ----------------- */
 
 
